@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 95 95.959961"
+   height="95.959961mm"
+   width="95mm">
+  <defs
+     id="defs2" />
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(-54.5,-72.040039)"
+     id="layer1">
+    <rect
+       y="100"
+       x="100"
+       height="55"
+       width="4"
+       id="rect10"
+       style="fill:#dbe2ef;fill-rule:evenodd;stroke-width:0.248796" />
+    <rect
+       style="fill:#dbe2ef;fill-rule:evenodd;stroke-width:0.237218"
+       id="rect10-7"
+       width="50"
+       height="4"
+       x="77"
+       y="100" />
+    <rect
+       style="fill:#dbe2ef;fill-rule:evenodd;stroke-width:0.248796"
+       id="rect10-9"
+       width="4"
+       height="55.000004"
+       x="77"
+       y="100" />
+    <rect
+       y="100"
+       x="123"
+       height="55.000008"
+       width="4"
+       id="rect10-9-6"
+       style="fill:#dbe2ef;fill-rule:evenodd;stroke-width:0.248796" />
+    <rect
+       y="125.5"
+       x="77"
+       height="4"
+       width="50"
+       id="rect10-7-7"
+       style="fill:#dbe2ef;fill-rule:evenodd;stroke-width:0.237218" />
+    <rect
+       style="fill:#dbe2ef;fill-rule:evenodd;stroke-width:0.237218"
+       id="rect10-7-7-1"
+       width="50"
+       height="4"
+       x="77"
+       y="151" />
+    <rect
+       transform="rotate(-23.198361)"
+       style="fill:#dbe2ef;fill-rule:evenodd;stroke-width:0.248796"
+       id="rect10-2"
+       width="4"
+       height="55.000004"
+       x="31.681196"
+       y="124.08834" />
+    <rect
+       y="-98.713036"
+       x="151.86327"
+       height="55.000004"
+       width="3.9999998"
+       id="rect10-2-9"
+       style="fill:#dbe2ef;fill-rule:evenodd;stroke-width:0.248796"
+       transform="matrix(0.91914661,0.3939156,0.3939156,-0.91914661,0,0)" />
+    <circle
+       r="35.506645"
+       cy="127.5"
+       cx="102"
+       id="path119"
+       style="fill:none;stroke:#dbe2ef;stroke-width:3.98671;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       transform="rotate(-21.036652)"
+       y="110.6342"
+       x="52.616287"
+       height="4"
+       width="26"
+       id="rect10-7-8"
+       style="fill:#dbe2ef;fill-rule:evenodd;stroke-width:0.17106" />
+  </g>
+</svg>

@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100vw;
+  height: 3em;
+  background-color: var(--fg-color);
+}
+
+.logo {
+  width: 2.5em;
+  height: auto;
+  margin-left: 5px;
+}
+
+.name {
+  color: var(--light-text-color);
+}

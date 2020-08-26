@@ -4,12 +4,12 @@
   justify-content: space-between;
 
   width: 100vw;
-  height: 3em;
+  height: 50px;
   background-color: var(--fg-color);
 }
 
 .logo {
-  width: 2.5em;
+  width: 40px;
   height: auto;
   margin-left: 5px;
 }

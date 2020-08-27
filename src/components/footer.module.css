@@ -1,0 +1,49 @@
+footer {
+  width: 100vw;
+  height: 100px;
+  color: var(--light-text-color);
+  background-color: var(--fg2-color);
+
+  display: grid;
+  grid-template-columns: 1fr 50% 1fr;
+}
+
+.externLink {
+  place-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.contact {
+  place-self: center;
+}
+
+.icon {
+  place-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+
+  border-radius: 45px;
+  background-color: var(--fg-color);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: var(--light-text-color);
+}
+
+.logo {
+  object-fit: cover;
+  width: 18px;
+
+  transition: color 0.3s ease;
+}
+
+.icon:hover .logo {
+  filter: brightness(10%);
+}

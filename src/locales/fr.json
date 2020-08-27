@@ -1,0 +1,11 @@
+{
+  "navBar": {
+    "experiences": "Expériences",
+    "skills": "Compétences",
+    "education": "Études"
+  },
+
+  "body": {
+    "intro": "Bonjour le Monde"
+  }
+}

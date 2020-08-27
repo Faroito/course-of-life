@@ -1,0 +1,21 @@
+.card {
+  display: flex;
+  width: 60vw;
+  padding: 20px;
+  margin-bottom: 20px;
+
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.companyLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.logo {
+  max-width: 150px;
+  max-height: 100px;
+}

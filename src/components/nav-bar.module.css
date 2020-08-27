@@ -1,19 +1,59 @@
-.header {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   width: 100vw;
-  height: 50px;
+  height: 70px;
+  color: var(--light-text-color);
   background-color: var(--fg-color);
 }
 
 .logo {
   width: 40px;
   height: auto;
-  margin-left: 5px;
+  margin-left: 10px;
+
+  transition: color 0.3s ease;
+  cursor: pointer;
 }
 
-.name {
-  color: var(--light-text-color);
+.logo:hover {
+  filter: brightness(200%);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  font-weight: 500;
+}
+
+.navItem {
+  margin-left: 10px;
+  margin-right: 10px;
+
+  transition: color 0.3s ease;
+  cursor: pointer;
+}
+
+.navItem:hover {
+  color: var(--bg-color);
+}
+
+.lang {
+  max-width: 25px;
+  height: auto;
+  margin-right: 10px;
+  border-radius: 20px;
+  /* border: 0.05px solid var(--light-text-color); */
+
+  cursor: pointer;
+  opacity: 0.95;
+  transition: color 0.3s ease;
+}
+
+.lang:hover {
+  filter: brightness(120%);
 }

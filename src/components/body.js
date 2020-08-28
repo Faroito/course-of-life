@@ -5,7 +5,7 @@ import { useIntl } from "react-intl";
 import ExperienceCard from "./experience-card";
 import css from "./body.module.css";
 
-const Body = ({}) => {
+const Body = ({ body }) => {
   const intl = useIntl();
   return (
     <div className={css.body}>

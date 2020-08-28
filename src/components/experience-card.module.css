@@ -1,18 +1,58 @@
+:root {
+  --delay-open1: 0s;
+  --duration-open1: 0.5s;
+  --delay-open2: 0.3s;
+  --duration-open2: 0.4s;
+  --delay-close1: 0.2s;
+  --duration-close1: 0.4s;
+  --delay-close2: 0s;
+  --duration-close2: 0.4s;
+}
+
 .card {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  width: 60vw;
+  display: flex;
+  align-items: center;
+  width: 65vw;
+  max-width: 700px;
   padding: 15px;
-  margin-bottom: 20px;
+  padding-left: 15vw;
+  margin: 40px 0px;
 
   border-radius: 20px;
   background-color: #ffffff;
+  transition-delay: var(--delay-open1);
+  transition-duration: var(--duration-open1);
+  position: relative;
+}
+
+.cardFold {
+  width: 50vw;
+  min-width: 360px;
+  max-width: 540px;
+  margin: 20px 0px;
+  padding-left: 15px;
+  transition-delay: var(--delay-close1);
+  transition-duration: var(--duration-close1);
 }
 
 .companyLogo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 15vw;
+  height: 15vw;
+  transition-delay: var(--delay-open2);
+  transition-duration: var(--duration-open2);
+}
+
+.companyLogoFold {
+  opacity: 0;
+  transition-delay: var(--delay-close2);
+  transition-duration: var(--duration-close2);
 }
 
 .logo {
@@ -23,7 +63,7 @@
 .cardText {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 
   justify-content: center;
   align-items: flex-start;
@@ -32,8 +72,9 @@
 
 .cardHeader {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
+  width: 100%;
 }
 
 .companyName {
@@ -49,6 +90,23 @@
   padding: 2px 5px;
 }
 
+.arrow {
+  width: 20px;
+  height: 20px;
+  margin-left: auto;
+  transition-delay: var(--delay-open1);
+  transition-duration: var(--duration-open1);
+  transform: rotate(90deg);
+
+  cursor: pointer;
+}
+
+.turnedArrow {
+  transition-delay: var(--delay-close1);
+  transition-duration: var(--duration-close1);
+  transform: rotate(270deg);
+}
+
 .jobTitle {
   font-weight: 500;
 }
@@ -57,19 +115,32 @@
   font-size: 0.8rem;
 }
 
+.transition {
+  opacity: 1;
+  transition: opacity 0.3s linear, font-size var(--duration-open1) ease;
+}
+
+.hide {
+  transition-delay: var(--delay-close1);
+  font-size: 0rem;
+  opacity: 0;
+  overflow: hidden;
+}
+
 .iconsList {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   align-items: center;
   width: 100%;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 .iconContainer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0px 5px;
+  margin-right: 6px;
   width: 30px;
   height: 30px;
   position: relative;
@@ -103,4 +174,19 @@
 
 .iconContainer:hover .icons {
   opacity: 0.5;
+}
+
+@media (min-width: 1200px) {
+  .card {
+    padding-left: 180px;
+  }
+
+  .cardFold {
+    padding-left: 15px;
+  }
+
+  .companyLogo {
+    width: 180px;
+    height: 180px;
+  }
 }

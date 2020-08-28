@@ -11,6 +11,7 @@
 
   "cards": {
     "technologies": "Technologies used:",
+    "unfold": "Unfold",
     "experiences": [
       {
         "name": "Valraiso",
@@ -18,7 +19,7 @@
         "title": "AI Research Assistant",
         "date_start": "2019-07",
         "date_end": "2019-08",
-        "description": [""],
+        "description": ["Hello World"],
         "technologies": [
           "Python3",
           "Pandas",

@@ -1,7 +1,8 @@
 .card {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
   width: 60vw;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 20px;
 
   border-radius: 20px;
@@ -12,15 +13,94 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 200px;
 }
 
 .logo {
-  max-width: 150px;
-  max-height: 100px;
+  max-width: 80%;
+  max-height: 60%;
+}
+
+.cardText {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.companyName {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.location {
+  font-size: 0.9rem;
+  color: #ffffff;
+  background-color: var(--fg2-color);
+  padding: 2px 5px;
+}
+
+.jobTitle {
+  font-weight: 500;
+}
+
+.description {
+  font-size: 0.8rem;
+}
+
+.iconsList {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  margin-top: 5px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 5px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.iconText {
+  font-size: 0.7rem;
+  white-space: nowrap;
+  padding: 2px 5px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: var(--fg2-color);
+
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  z-index: 1;
+}
+
+.iconContainer:hover .iconText {
+  visibility: visible;
 }
 
 .icons {
-  max-width: 30px;
-  max-height: 30px;
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.iconContainer:hover .icons {
+  opacity: 0.5;
 }

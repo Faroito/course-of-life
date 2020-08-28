@@ -1,4 +1,5 @@
 import React from "react";
+import { useIntl } from "react-intl";
 // import classnames from "classnames";
 import css from "./experience-card.module.css";
 
@@ -20,25 +21,41 @@ const ExperienceCard = ({
   description,
   technologies,
 }) => {
+  const intl = useIntl();
   return (
     <div className={css.card}>
       <div className={css.companyLogo}>
-        <img src={"logo/" + clearName(name) + ".png"} className={css.logo} />
+        <img
+          src={"logo/" + clearName(name) + ".png"}
+          alt=""
+          className={css.logo}
+        />
       </div>
-      <div>
-        <div>{title}</div>
-        <div>{location}</div>
-        <div>
+      <div className={css.cardText}>
+        <div className={css.cardHeader}>
+          <div className={css.companyName}>{name}</div>
+          <div className={css.location}>{location}</div>
+        </div>
+        <div className={css.jobTitle}>{title}</div>
+        <div className={css.description}>
+          {description.map((desc, index) => {
+            return (
+              <p key={index}>
+                {desc}
+                <br />
+              </p>
+            );
+          })}
+        </div>
+        <div>{intl.messages.cards.technologies}</div>
+        <div className={css.iconsList}>
           {technologies.map((tech, index) => {
             const fileName = "icons/" + clearName(tech) + ".svg";
-            console.log(fileName);
             return (
-              <img
-                src={fileName}
-                alt={tech}
-                key={index}
-                className={css.icons}
-              />
+              <div className={css.iconContainer} key={index}>
+                <img src={fileName} alt="" className={css.icons} />
+                <p className={css.iconText}>{tech}</p>
+              </div>
             );
           })}
         </div>

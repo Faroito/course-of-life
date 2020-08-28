@@ -17,7 +17,7 @@ const Footer = ({ language }) => {
           <img src="icons/github.svg" alt="github" className={css.logo} />
         </a>
       </div>
-      <div className={css.contact}>Contact: timothee.couble@gmail.com</div>
+      <div className={css.contact}>Contact me</div>
       <div className={css.icon}>
         <img src="icons/download.svg" alt="download" className={css.logo} />
       </div>

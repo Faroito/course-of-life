@@ -12,7 +12,7 @@ const Body = ({}) => {
       <div>{intl.messages.body.intro}</div>
       <div className={css.experiences}>
         <h2>{intl.messages.navBar.experiences}</h2>
-        {intl.messages.experiences.map((experience, index) => {
+        {intl.messages.cards.experiences.map((experience, index) => {
           return <ExperienceCard {...experience} key={index} />;
         })}
       </div>

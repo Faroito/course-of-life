@@ -7,67 +7,67 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0 (4035a4f, 2020-05-01)"
-   sodipodi:docname="pytest.svg"
-   id="svg8"
+   width="74.208893mm"
+   height="88mm"
+   viewBox="0 0 74.208893 88"
    version="1.1"
-   viewBox="0 0 54.208897 68"
-   height="68mm"
-   width="54.208897mm">
+   id="svg8"
+   sodipodi:docname="pytest.svg"
+   inkscape:version="1.0 (4035a4f, 2020-05-01)">
   <defs
      id="defs2">
     <marker
-       inkscape:isstock="true"
-       style="overflow:visible"
-       id="Arrow1Lstart"
-       refX="0"
-       refY="0"
+       inkscape:stockid="Arrow1Lstart"
        orient="auto"
-       inkscape:stockid="Arrow1Lstart">
+       refY="0"
+       refX="0"
+       id="Arrow1Lstart"
+       style="overflow:visible"
+       inkscape:isstock="true">
       <path
-         transform="matrix(0.8,0,0,0.8,10,0)"
-         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         id="path930"
          d="M 0,0 5,-5 -12.5,0 5,5 Z"
-         id="path930" />
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1pt"
+         transform="matrix(0.8,0,0,0.8,10,0)" />
     </marker>
     <filter
-       height="1.1437275"
-       y="-0.071863815"
-       width="1.0169955"
-       x="-0.0084977662"
-       id="filter1300"
+       inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
-       inkscape:collect="always">
+       id="filter1300"
+       x="-0.0084977662"
+       width="1.0169955"
+       y="-0.071863815"
+       height="1.1437275">
       <feGaussianBlur
-         id="feGaussianBlur1302"
+         inkscape:collect="always"
          stdDeviation="0.18873178"
-         inkscape:collect="always" />
+         id="feGaussianBlur1302" />
     </filter>
   </defs>
   <sodipodi:namedview
-     inkscape:window-maximized="0"
-     inkscape:window-y="1103"
-     inkscape:window-x="276"
-     inkscape:window-height="943"
-     inkscape:window-width="1434"
-     fit-margin-bottom="0"
-     fit-margin-right="0"
-     fit-margin-left="0"
-     fit-margin-top="0"
-     showguides="false"
-     showgrid="false"
-     inkscape:document-rotation="0"
-     inkscape:current-layer="layer1"
-     inkscape:document-units="mm"
-     inkscape:cy="224.18079"
-     inkscape:cx="185.4076"
-     inkscape:zoom="1.1831706"
-     inkscape:pageshadow="2"
-     inkscape:pageopacity="0.0"
-     borderopacity="1.0"
-     bordercolor="#666666"
+     id="base"
      pagecolor="#ffffff"
-     id="base" />
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.1831706"
+     inkscape:cx="223.20288"
+     inkscape:cy="261.97607"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     showguides="false"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:window-width="1434"
+     inkscape:window-height="943"
+     inkscape:window-x="276"
+     inkscape:window-y="1103"
+     inkscape:window-maximized="0" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -81,72 +81,72 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0.10444658)"
-     id="layer1"
+     inkscape:label="Calque 1"
      inkscape:groupmode="layer"
-     inkscape:label="Calque 1">
+     id="layer1"
+     transform="translate(10.104447,10)">
     <rect
-       y="13.465169"
-       x="0.46516901"
-       height="54.06966"
-       width="11.069659"
+       style="fill:#009de0;fill-opacity:1;stroke:#009de0;stroke-width:0.930338;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect833"
-       style="fill:#009de0;fill-opacity:1;stroke:#009de0;stroke-width:0.930338;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       width="11.069659"
+       height="54.06966"
+       x="0.46516901"
+       y="13.465169" />
     <rect
-       style="fill:#d4d756;fill-opacity:1;stroke:#d4d756;stroke-width:0.844007;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect835"
-       width="11.155993"
-       height="44.155994"
+       y="13.422004"
        x="14.422003"
-       y="13.422004" />
+       height="44.155994"
+       width="11.155993"
+       id="rect835"
+       style="fill:#d4d756;fill-opacity:1;stroke:#d4d756;stroke-width:0.844007;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       y="13.346135"
-       x="28.346136"
-       height="29.30773"
-       width="11.30773"
+       style="fill:#d49348;fill-opacity:1;stroke:#d49348;stroke-width:0.692271;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect837"
-       style="fill:#d49348;fill-opacity:1;stroke:#d49348;stroke-width:0.692271;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       width="11.30773"
+       height="29.30773"
+       x="28.346136"
+       y="13.346135" />
     <rect
-       style="fill:#be4b30;fill-opacity:1;stroke:#be4b30;stroke-width:0.537991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect839"
-       width="11.46201"
-       height="17.462009"
+       y="13.268995"
        x="42.268993"
-       y="13.268995" />
+       height="17.462009"
+       width="11.46201"
+       id="rect839"
+       style="fill:#be4b30;fill-opacity:1;stroke:#be4b30;stroke-width:0.537991;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       style="mix-blend-mode:normal;fill:#009de0;fill-opacity:1;stroke:#009de0;stroke-width:0.217726;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect841"
-       width="11.782273"
-       height="2.7822735"
+       y="0.10886325"
        x="0.10886325"
-       y="0.10886325" />
+       height="2.7822735"
+       width="11.782273"
+       id="rect841"
+       style="mix-blend-mode:normal;fill:#009de0;fill-opacity:1;stroke:#009de0;stroke-width:0.217726;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     <rect
-       y="4.3485093"
-       x="0.3485097"
-       height="6.3029814"
-       width="53.302982"
+       style="fill:#7c7c7e;fill-opacity:1;stroke:#7c7c7e;stroke-width:1.097;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1300)"
        id="rect843"
-       style="fill:#7c7c7e;fill-opacity:1;stroke:#7c7c7e;stroke-width:1.097;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1300)" />
+       width="53.302982"
+       height="6.3029814"
+       x="0.3485097"
+       y="4.3485093" />
     <rect
-       y="0.108863"
-       x="14.108863"
-       height="2.7822735"
-       width="11.782273"
+       style="fill:#d4d756;fill-opacity:1;stroke:#d4d756;stroke-width:0.217726;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect844"
-       style="fill:#d4d756;fill-opacity:1;stroke:#d4d756;stroke-width:0.217726;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
-    <rect
-       style="fill:#d49348;fill-opacity:1;stroke:#d49348;stroke-width:0.217726;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect846"
        width="11.782273"
        height="2.7822735"
-       x="28.108864"
+       x="14.108863"
        y="0.108863" />
     <rect
        y="0.108863"
-       x="42.108864"
+       x="28.108864"
        height="2.7822735"
        width="11.782273"
+       id="rect846"
+       style="fill:#d49348;fill-opacity:1;stroke:#d49348;stroke-width:0.217726;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    <rect
+       style="fill:#be4b30;fill-opacity:1;stroke:#be4b30;stroke-width:0.217726;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect848"
-       style="fill:#be4b30;fill-opacity:1;stroke:#be4b30;stroke-width:0.217726;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       width="11.782273"
+       height="2.7822735"
+       x="42.108864"
+       y="0.108863" />
   </g>
 </svg>

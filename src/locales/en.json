@@ -9,78 +9,89 @@
     "intro": "Hello World"
   },
 
-  "experiences": [
-    {
-      "name": "Valraiso",
-      "location": "Lyon, France",
-      "title": "AI Research Assistant",
-      "date_start": "2019-07",
-      "date_end": "2019-08",
-      "description": [""],
-      "technologies": [
-        "Python3",
-        "Pandas",
-        "Scikit-Learn",
-        "MySQL",
-        "Git",
-        "Mac OS"
-      ]
-    },
-    {
-      "name": "ForCity",
-      "location": "Lyon, France",
-      "title": "Modeling Python Developer",
-      "date_start": "2019-04",
-      "date_end": "2019-06",
-      "description": [
-        "ForCity is a french start-up, which provide prospective tools to help private actors and public authorities to define the territory’s strategy.",
-        "..."
-      ],
-      "technologies": [
-        "Python3",
-        "Pandas",
-        "pytest",
-        "MapServer",
-        "PostgreSQL",
-        "Git",
-        "Linux"
-      ]
-    },
+  "cards": {
+    "technologies": "Technologies used:",
+    "experiences": [
+      {
+        "name": "Valraiso",
+        "location": "Lyon",
+        "title": "AI Research Assistant",
+        "date_start": "2019-07",
+        "date_end": "2019-08",
+        "description": [""],
+        "technologies": [
+          "Python3",
+          "Pandas",
+          "Scikit-Learn",
+          "MySQL",
+          "Git",
+          "Mac OS"
+        ]
+      },
+      {
+        "name": "ForCity",
+        "location": "Lyon",
+        "title": "Modeling Python Developer",
+        "date_start": "2019-04",
+        "date_end": "2019-06",
+        "description": [
+          "ForCity is a french start-up, which provide prospective tools to help private actors and public authorities to define the territory’s strategy.",
+          "..."
+        ],
+        "technologies": [
+          "Python3",
+          "Pandas",
+          "pytest",
+          "MapServer",
+          "PostgreSQL",
+          "Git",
+          "Linux"
+        ]
+      },
 
-    {
-      "name": "Epitech",
-      "location": "Lyon, France",
-      "title": "Educational Assistant",
-      "date_start": "2018-02",
-      "date_end": "2019-03",
-      "description": [
-        "Part time job to support first and second year students in their scholarship: project assistance, technical advisory..."
-      ],
-      "technologies": ["C", "C++", "Bash", "Docker", "Jenkins", "Git", "Linux"]
-    },
-    {
-      "name": "SmartShoot",
-      "location": "San Francisco, CA, USA",
-      "title": "Software Developer Junior",
-      "date_start": "2017-07",
-      "date_end": "2017-12",
-      "description": [
-        "I did my second year internship during which I did Python3 Web Developmentat at SmartShoot, a start-up.",
-        "SmartShoot is a worldwide leader in photograph services. Their marketplace provides to big companies (YouTube, Uber, ...) a large network of  professional photographers.",
-        "This experience allowed me to learn to work in a team using Agile development methods and to use the tools that support them. I have learned unitary and functional testing techniques as well as delivery processes in a professional environment."
-      ],
-      "technologies": [
-        "Python3",
-        "Pyramid",
-        "pytest",
-        "Selenium",
-        "Vue.js",
-        "MySQL",
-        "MongoDB",
-        "Jira",
-        "Git",
-        "Mac OS"
-      ]
-    }
-  ]
+      {
+        "name": "Epitech",
+        "location": "Lyon",
+        "title": "Educational Assistant",
+        "date_start": "2018-02",
+        "date_end": "2019-03",
+        "description": [
+          "Part time job to support first and second year students in their scholarship: project assistance, technical advisory..."
+        ],
+        "technologies": [
+          "C",
+          "C++",
+          "Bash",
+          "Docker",
+          "Jenkins",
+          "Git",
+          "Linux"
+        ]
+      },
+      {
+        "name": "SmartShoot",
+        "location": "San Francisco",
+        "title": "Software Developer Junior",
+        "date_start": "2017-07",
+        "date_end": "2017-12",
+        "description": [
+          "I did my second year internship during which I did Python3 Web Developmentat at SmartShoot, a start-up.",
+          "SmartShoot is a worldwide leader in photograph services. Their marketplace provides to big companies (YouTube, Uber, ...) a large network of  professional photographers.",
+          "This experience allowed me to learn to work in a team using Agile development methods and to use the tools that support them. I have learned unitary and functional testing techniques as well as delivery processes in a professional environment."
+        ],
+        "technologies": [
+          "Python3",
+          "Pyramid",
+          "pytest",
+          "Selenium",
+          "Vue.js",
+          "MySQL",
+          "MongoDB",
+          "Jira",
+          "Git",
+          "Mac OS"
+        ]
+      }
+    ]
+  }
 }

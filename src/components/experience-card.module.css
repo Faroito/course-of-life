@@ -9,26 +9,32 @@
   --duration-close2: 0.4s;
 }
 
+.experienceCard {
+  position: relative;
+}
+
 .card {
   display: flex;
   align-items: center;
   width: 65vw;
-  max-width: 700px;
+  max-width: 715px;
   padding: 15px;
-  padding-left: 15vw;
+  padding-left: calc(15vw + 15px);
   margin: 40px 0px;
 
   border-radius: 20px;
   background-color: #ffffff;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   transition-delay: var(--delay-open1);
   transition-duration: var(--duration-open1);
   position: relative;
+  z-index: 2;
 }
 
 .cardFold {
   width: 50vw;
   min-width: 360px;
-  max-width: 540px;
+  max-width: 550px;
   margin: 20px 0px;
   padding-left: 15px;
   transition-delay: var(--delay-close1);
@@ -45,6 +51,8 @@
   justify-content: center;
   width: 15vw;
   height: 15vw;
+  max-width: 165px;
+  max-height: 165px;
   transition-delay: var(--delay-open2);
   transition-duration: var(--duration-open2);
 }
@@ -91,8 +99,8 @@
 }
 
 .arrow {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   margin-left: auto;
   transition-delay: var(--delay-open1);
   transition-duration: var(--duration-open1);
@@ -176,17 +184,12 @@
   opacity: 0.5;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1100px) {
   .card {
     padding-left: 180px;
   }
 
   .cardFold {
     padding-left: 15px;
-  }
-
-  .companyLogo {
-    width: 180px;
-    height: 180px;
   }
 }

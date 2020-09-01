@@ -10,14 +10,18 @@ const Body = ({ body }) => {
   return (
     <div className={css.body}>
       <div>{intl.messages.body.intro}</div>
-      <div className={css.experiences}>
+      <div id="experiences" className={css.experiences}>
         <h2>{intl.messages.navBar.experiences}</h2>
         {intl.messages.cards.experiences.map((experience, index) => {
           return <ExperienceCard {...experience} key={index} />;
         })}
       </div>
-      <h2>{intl.messages.navBar.skills}</h2>
-      <h2>{intl.messages.navBar.education}</h2>
+      <div id="skills">
+        <h2>{intl.messages.navBar.skills}</h2>
+      </div>
+      <div id="education">
+        <h2>{intl.messages.navBar.education}</h2>
+      </div>
     </div>
   );
 };

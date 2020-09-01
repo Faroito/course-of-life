@@ -17,9 +17,15 @@ const NavBar = ({ language, setLanguage }) => {
       </div>
       <h1>Timothée Couble</h1>
       <div className={css.nav}>
-        <div className={css.navItem}>{intl.messages.navBar.experiences}</div>
-        <div className={css.navItem}>{intl.messages.navBar.skills}</div>
-        <div className={css.navItem}>{intl.messages.navBar.education}</div>
+        <a className={css.navItem} href="#experiences">
+          {intl.messages.navBar.experiences}
+        </a>
+        <a className={css.navItem} href="#skills">
+          {intl.messages.navBar.skills}
+        </a>
+        <a className={css.navItem} href="#education">
+          {intl.messages.navBar.education}
+        </a>
         {/* <a className={css.navItem}>Personal Project</a> */}
       </div>
       <div>

@@ -10,7 +10,8 @@
   },
 
   "cards": {
-    "technologies": "Technologies used:",
+    "technologies_used": "Technologies used:",
+    "technologies_learnt": "Technologies learnt:",
     "unfold": "Unfold",
     "experiences": [
       {
@@ -91,6 +92,53 @@
           "Jira",
           "Git",
           "Mac OS"
+        ]
+      }
+    ],
+    "educations": [
+      {
+        "name": "Epitech",
+        "location": "Lyon",
+        "title": "Master of Computer Sciences",
+        "title_bis": "Expert in Information Technologies",
+        "date_start": "2016-09",
+        "date_end": "2021-08",
+        "description": ["Hello World"],
+        "technologies": [
+          "C",
+          "C++",
+          "SFML",
+          "CMake",
+          "Python3",
+          "Haskell",
+          "Bash",
+          "Git",
+          "Linux"
+        ]
+      },
+      {
+        "name": "Ionis STM",
+        "location": "Paris",
+        "title": "Teaching & Coaching Diploma",
+        "date_start": "2017-07",
+        "date_end": "2019-03",
+        "description": ["Educational / pedagogical technology"],
+        "technologies": []
+      },
+      {
+        "name": "Heriot-Watt University",
+        "location": "Edinburgh",
+        "title": "Master in Artificial Intelligence",
+        "date_start": "2019-09",
+        "date_end": "2020-08",
+        "description": ["Hello World"],
+        "technologies": [
+          "Python3",
+          "Scikit-Learn",
+          "C++",
+          "OpenGl",
+          "SPARQL",
+          "Neo4j"
         ]
       }
     ]

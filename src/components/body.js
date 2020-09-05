@@ -2,6 +2,7 @@ import React from "react";
 import { useIntl } from "react-intl";
 // import classnames from "classnames";
 
+import Education from "./education";
 import ExperienceCard from "./experience-card";
 import css from "./body.module.css";
 
@@ -10,18 +11,16 @@ const Body = ({ body }) => {
   return (
     <div className={css.body}>
       <div>{intl.messages.body.intro}</div>
-      <div id="experiences" className={css.experiences}>
-        <h2>{intl.messages.navBar.experiences}</h2>
+      <h2 id="experiences">{intl.messages.navBar.experiences}</h2>
+      <div className={css.experiences}>
         {intl.messages.cards.experiences.map((experience, index) => {
-          return <ExperienceCard {...experience} key={index} />;
+          return <ExperienceCard {...experience} idx={index} key={index} />;
         })}
       </div>
-      <div id="skills">
-        <h2>{intl.messages.navBar.skills}</h2>
-      </div>
-      <div id="education">
-        <h2>{intl.messages.navBar.education}</h2>
-      </div>
+      <h2 id="skills">{intl.messages.navBar.skills}</h2>
+      <div></div>
+      <h2 id="education">{intl.messages.navBar.education}</h2>
+      <Education />
     </div>
   );
 };

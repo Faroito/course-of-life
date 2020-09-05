@@ -20,6 +20,14 @@
   transition-duration: var(--duration-open1);
 }
 
+.timelineStart {
+  background: linear-gradient(0deg, var(--light-text-color) 80%, transparent);
+}
+
+.timelineEnd {
+  background: linear-gradient(180deg, var(--light-text-color) 80%, transparent);
+}
+
 .dateInfo {
   position: absolute;
   top: 34px;

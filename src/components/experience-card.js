@@ -1,17 +1,10 @@
 import React, { useState } from "react";
 import { useIntl } from "react-intl";
 import classnames from "classnames";
-import css from "./experience-card.module.css";
 import Timeline from "./timeline";
 
-const clearName = (name) => {
-  return name
-    .toLowerCase()
-    .replace(/[0-9]/g, "")
-    .replace(".", "-")
-    .replace(" ", "-")
-    .replace(/\+/g, "plus");
-};
+import { clearName } from "../services/misc";
+import css from "./experience-card.module.css";
 
 const ExperienceCard = ({
   name,
@@ -21,6 +14,7 @@ const ExperienceCard = ({
   date_end,
   description,
   technologies,
+  idx,
 }) => {
   const [fold, setFold] = useState(true);
   const intl = useIntl();
@@ -40,11 +34,11 @@ const ExperienceCard = ({
   };
 
   return (
-    <div className={css.experienceCard}>
+    <div className={css.position}>
       <div className={card}>
         <div className={companyLogo}>
           <img
-            src={"logo/" + clearName(name) + ".png"}
+            src={"logos/" + clearName(name) + ".png"}
             alt=""
             className={css.logo}
           />
@@ -71,7 +65,9 @@ const ExperienceCard = ({
               );
             })}
           </div>
-          <div className={techStyle}>{intl.messages.cards.technologies}</div>
+          <div className={techStyle}>
+            {intl.messages.cards.technologies_used}
+          </div>
           <div className={css.iconsList}>
             {technologies.map((tech, index) => {
               const fileName = "icons/tech/" + clearName(tech) + ".svg";
@@ -85,7 +81,12 @@ const ExperienceCard = ({
           </div>
         </div>
       </div>
-      <Timeline fold={fold} date_start={date_start} date_end={date_end} />
+      <Timeline
+        fold={fold}
+        date_start={date_start}
+        date_end={date_end}
+        idx={idx}
+      />
     </div>
   );
 };

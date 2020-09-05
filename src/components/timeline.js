@@ -1,15 +1,23 @@
 import React from "react";
 import classnames from "classnames";
 import moment from "moment";
+import { useIntl } from "react-intl";
 
 import css from "./timeline.module.css";
 
-const Timeline = ({ fold, date_start, date_end }) => {
+const Timeline = ({ fold, date_start, date_end, idx }) => {
+  const intl = useIntl();
+
   const start = moment(date_start);
   const end = moment(date_end);
   const monthNb = end.diff(start, "month") + 1;
+  const len = intl.messages.cards.experiences.length;
 
-  const timeline = classnames(css.timeline, { [css.timelineUnfold]: !fold });
+  const timeline = classnames(css.timeline, {
+    [css.timelineUnfold]: !fold,
+    [css.timelineStart]: idx === 0,
+    [css.timelineEnd]: idx === len - 1,
+  });
   const dateInfo = classnames(css.dateInfo, { [css.hide]: fold });
   const months = classnames(css.months, { [css.hide]: fold });
 

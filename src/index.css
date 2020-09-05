@@ -13,7 +13,6 @@ html {
 }
 
 body {
-  display: flex;
   margin: 0;
   font-family: "Montserrat", sans-serif; /* Trebuchet MS */
   font-size: 16px;
@@ -27,6 +26,10 @@ body {
 
 h1 {
   font-size: 2rem;
+}
+
+h2 {
+  margin: 25px 0px;
 }
 
 header {

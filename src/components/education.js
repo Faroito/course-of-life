@@ -11,7 +11,7 @@ const EducationCard = ({ education }) => {
 
   const schools = intl.messages.cards.educations;
 
-  const onClick = (idx) => (e) => {
+  const changeSelection = (idx) => (e) => {
     setSelected(idx);
   };
 
@@ -25,44 +25,101 @@ const EducationCard = ({ education }) => {
           });
 
           return (
-            <div key={index} className={logoBox} onClick={onClick(index)}>
+            <a
+              key={index}
+              className={logoBox}
+              onClick={changeSelection(index)}
+              href={"#education-" + index}
+            >
               <img src={img} alt={school.name} className={css.logo} />
-            </div>
+            </a>
           );
         })}
       </div>
-      <div className={css.card}>
-        <div className={css.cardHeader}>
-          <div className={css.schoolName}>{schools[selected].name}</div>
-          <div className={css.location}>{schools[selected].location}</div>
-        </div>
-        <div className={css.diplomaTitle}>{schools[selected].title}</div>
-        <div className={css.description}>
-          {schools[selected].description.map((desc, index) => {
+      <div className={css.slider}>
+        <div className={css.slides}>
+          {schools.map((school, index) => {
+            const canPrev = index > 0;
+            const canNext = index < schools.length - 1;
+
+            const prevArrow = classnames(css.prevArrow, {
+              [css.disabled]: !canPrev,
+            });
+            const nextArrow = classnames(css.lastArrow, {
+              [css.disabled]: !canNext,
+            });
+
             return (
-              <p key={index}>
-                {desc}
-                <br />
-              </p>
+              <div
+                className={css.wrapper}
+                key={index}
+                onMouseEnter={changeSelection(index)}
+                id={"education-" + index}
+              >
+                <div className={css.card}>
+                  <div className={css.cardHeader}>
+                    <div className={css.schoolName}>{school.name}</div>
+                    <div className={css.location}>{school.location}</div>
+                  </div>
+                  <div className={css.diplomaTitle}>{school.title}</div>
+                  <div className={css.description}>
+                    {school.description.map((desc, index) => {
+                      return (
+                        <p key={index}>
+                          {desc}
+                          <br />
+                        </p>
+                      );
+                    })}
+                  </div>
+                  {school.technologies.length !== 0 && (
+                    <div className={css.technologiesWrapper}>
+                      <span>{intl.messages.cards.technologies_learnt}</span>
+                      <div className={css.iconsList}>
+                        {school.technologies.map((tech, index) => {
+                          const fileName =
+                            "icons/tech/" + clearName(tech) + ".svg";
+                          return (
+                            <div className={css.iconContainer} key={index}>
+                              <img
+                                src={fileName}
+                                alt=""
+                                className={css.icons}
+                              />
+                              <p className={css.iconText}>{tech}</p>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  )}
+                </div>
+                {/* <a
+                  className={prevArrow}
+                  onClick={changeSelection(canPrev ? index - 1 : index)}
+                  href={"#education-" + (index - 1)}
+                >
+                  <img
+                    src="icons/next_arrow.svg"
+                    alt="previous"
+                    className={classnames(css.arrowImage, css.turnedArrow)}
+                  />
+                </a>
+                <a
+                  className={nextArrow}
+                  onClick={changeSelection(canNext ? index + 1 : index)}
+                  href={"#education-" + (index + 1)}
+                >
+                  <img
+                    src="icons/next_arrow.svg"
+                    alt="next"
+                    className={css.arrowImage}
+                  />
+                </a> */}
+              </div>
             );
           })}
         </div>
-        {schools[selected].technologies.length !== 0 && (
-          <div>
-            <span>{intl.messages.cards.technologies_learnt}</span>
-            <div className={css.iconsList}>
-              {schools[selected].technologies.map((tech, index) => {
-                const fileName = "icons/tech/" + clearName(tech) + ".svg";
-                return (
-                  <div className={css.iconContainer} key={index}>
-                    <img src={fileName} alt="" className={css.icons} />
-                    <p className={css.iconText}>{tech}</p>
-                  </div>
-                );
-              })}
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );

@@ -50,7 +50,7 @@ const ExperienceCard = ({
             <img
               onClick={doUnfold}
               className={arrow}
-              src="icons/arrow.svg"
+              src="icons/fold-arrow.svg"
               alt={intl.messages.cards.unfold}
             />
           </div>

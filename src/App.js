@@ -5,9 +5,7 @@ import { IntlProvider } from "react-intl";
 import en from "./locales/en.json";
 import fr from "./locales/fr.json";
 
-import Body from "./components/body";
-import Footer from "./components/footer";
-import NavBar from "./components/nav-bar";
+import Main from "./router/main";
 import css from "./app.module.css";
 
 const messages = { fr, en };
@@ -37,9 +35,7 @@ const App = () => {
   return (
     <IntlProvider locale={language} messages={messages[language]}>
       <div className={css.app}>
-        <NavBar language={language} setLanguage={setLanguage} />
-        <Body />
-        <Footer />
+        <Main language={language} setLanguage={setLanguage} />
       </div>
     </IntlProvider>
   );

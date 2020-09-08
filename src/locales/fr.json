@@ -7,5 +7,10 @@
 
   "body": {
     "intro": "Bonjour le Monde"
+  },
+
+  "footer": {
+    "contact": "Contactez-moi",
+    "home": "Retour page d'accueil"
   }
 }

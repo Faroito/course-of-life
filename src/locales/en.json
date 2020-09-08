@@ -9,6 +9,11 @@
     "intro": "<photo> / <intro> / Languages: French, English"
   },
 
+  "footer": {
+    "contact": "Contact me",
+    "home": "Back home page"
+  },
+
   "cards": {
     "technologies_used": "Technologies used:",
     "technologies_learnt": "Technologies learnt:",

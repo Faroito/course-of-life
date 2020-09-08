@@ -1,9 +1,10 @@
 import React from "react";
-// import { useIntl } from "react-intl";
+import { Link } from "react-router-dom";
+
 // import classnames from "classnames";
 import css from "./footer.module.css";
 
-const Footer = ({ language }) => {
+const Footer = ({ link, text }) => {
   return (
     <footer>
       <div className={css.externLink}>
@@ -17,7 +18,9 @@ const Footer = ({ language }) => {
           <img src="icons/github.svg" alt="github" className={css.logo} />
         </a>
       </div>
-      <div className={css.contact}>Contact me</div>
+      <Link className={css.contact} to={link}>
+        <span>{text}</span>
+      </Link>
       <div className={css.icon}>
         <img src="icons/download.svg" alt="download" className={css.logo} />
       </div>

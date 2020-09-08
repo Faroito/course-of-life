@@ -1,5 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
+
 // import classnames from "classnames";
 import css from "./nav-bar.module.css";
 
@@ -12,9 +14,9 @@ const NavBar = ({ language, setLanguage }) => {
 
   return (
     <header>
-      <div>
+      <Link to="/">
         <img src="tim_logo.svg" alt="" className={css.logo} />
-      </div>
+      </Link>
       <h1>Timothée Couble</h1>
       <div className={css.nav}>
         <a className={css.navItem} href="#experiences">

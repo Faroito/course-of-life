@@ -2,8 +2,8 @@ import React from "react";
 import { useIntl } from "react-intl";
 // import classnames from "classnames";
 
-import Education from "./education";
-import ExperienceCard from "./experience-card";
+import Education from "../components/education";
+import ExperienceCard from "../components/experience-card";
 import css from "./body.module.css";
 
 const Body = ({ body }) => {

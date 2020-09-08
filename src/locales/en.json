@@ -13,6 +13,8 @@
     "technologies_used": "Technologies used:",
     "technologies_learnt": "Technologies learnt:",
     "unfold": "Unfold",
+    "previous": "Previous",
+    "next": "Next",
     "experiences": [
       {
         "name": "Valraiso",
@@ -54,7 +56,7 @@
       {
         "name": "Epitech",
         "location": "Lyon",
-        "title": "Educational Assistant",
+        "title": "Teaching Assistant & Student Coach",
         "date_start": "2018-02",
         "date_end": "2019-03",
         "description": [

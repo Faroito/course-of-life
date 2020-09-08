@@ -106,8 +106,13 @@
   transition-delay: var(--delay-open1);
   transition-duration: var(--duration-open1);
   transform: rotate(90deg);
+  filter: brightness(10%);
 
   cursor: pointer;
+}
+
+.arrow:hover {
+  filter: brightness(0%);
 }
 
 .turnedArrow {

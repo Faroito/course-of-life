@@ -18,11 +18,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 12vw;
-  height: 6vw;
+  width: 120px;
+  height: 60px;
 
   background-color: #ffffff;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border-radius: 20px;
   margin: 3px 3px;
   box-shadow: inset 0 0px 8px 0 rgba(0, 0, 0, 0.13);
@@ -39,15 +39,16 @@
 }
 
 .logo {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .slider {
   width: 500px;
-  padding: 30px;
+  padding: 15px 35px;
   text-align: center;
   overflow: hidden;
+  position: relative;
 }
 
 .slides {
@@ -60,6 +61,7 @@
 
 .slides::-webkit-scrollbar {
   width: 0;
+  height: 0;
 }
 
 .slides::-webkit-scrollbar-track {
@@ -72,8 +74,11 @@
 }
 
 .wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   padding: 10px;
-  position: relative;
 }
 
 .card {
@@ -179,27 +184,33 @@
   opacity: 0.5;
 }
 
-/* .prevArrow {
+.arrow {
   position: absolute;
-  top: 0px;
-  left: 0px;
+  top: 50%;
+  max-width: 30px;
+  max-height: 30px;
+  transition: all 0.2s linear;
+  border-radius: 50%;
+  cursor: pointer;
+  filter: brightness(25%);
 }
 
-.lastArrow  {
-  top: -100px;
-  background-color: tomato;
+.arrow:hover .arrowImage {
+  filter: brightness(0%);
 }
-a.disabled {
+
+.disabled {
   pointer-events: none;
   cursor: default;
   opacity: 0.3;
 }
 
-.arrowImage {
-  width: 25px;
-  height: 25px;
+.prevArrow {
+  left: 0px;
+  transform: translate(0, -50%);
 }
 
-.turnedArrow {
-  transform: rotate(180deg);
-} */
+.nextArrow {
+  right: 0px;
+  transform: translate(0, -50%) rotate(180deg);
+}

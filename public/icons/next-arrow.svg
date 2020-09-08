@@ -10,7 +10,7 @@
    inkscape:version="1.0 (4035a4f, 2020-05-01)"
    height="72.000786"
    width="33.750572"
-   sodipodi:docname="next_arrow.svg"
+   sodipodi:docname="next-arrow.svg"
    id="svg951"
    xml:space="preserve"
    enable-background="new 0 0 100 100"
@@ -47,5 +47,6 @@
      pagecolor="#ffffff" /><g
      transform="translate(-33.249427,-12.999606)"
      id="g945"><path
+     style="fill:#dbe2ef" 
        id="path943"
        d="M 66.254,46.947 38.916,14.152 c -1.131,-1.359 -3.154,-1.543 -4.512,-0.408 -1.361,1.137 -1.545,3.152 -0.412,4.512 L 59.621,49 33.992,79.742 c -1.131,1.363 -0.947,3.379 0.412,4.514 1.357,1.135 3.381,0.951 4.512,-0.408 L 66.254,51.055 C 66.752,50.459 67,49.729 67,49 67,48.27 66.752,47.541 66.254,46.947 Z" /></g></svg>

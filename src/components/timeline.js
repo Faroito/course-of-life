@@ -15,8 +15,8 @@ const Timeline = ({ fold, date_start, date_end, idx }) => {
 
   const timeline = classnames(css.timeline, {
     [css.timelineUnfold]: !fold,
-    [css.timelineStart]: idx === 0,
-    [css.timelineEnd]: idx === len - 1,
+    [css.timelineStart]: idx === len - 1,
+    [css.timelineEnd]: idx === 0,
   });
   const dateInfo = classnames(css.dateInfo, { [css.hide]: fold });
   const months = classnames(css.months, { [css.hide]: fold });
@@ -24,7 +24,7 @@ const Timeline = ({ fold, date_start, date_end, idx }) => {
   return (
     <div className={timeline}>
       <div className={dateInfo}>
-        {start.format("MMM. YYYY")} {" - "} {end.format("MMM. YYYY")}
+        {start.format("MMM. YYYY") + " - " + end.format("MMM. YYYY")}
       </div>
       <div className={css.point} />
       <div className={css.dateBox}>

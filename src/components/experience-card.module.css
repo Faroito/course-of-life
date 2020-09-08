@@ -106,7 +106,7 @@
   transition-delay: var(--delay-open1);
   transition-duration: var(--duration-open1);
   transform: rotate(90deg);
-  filter: brightness(10%);
+  filter: brightness(20%);
 
   cursor: pointer;
 }

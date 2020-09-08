@@ -17,39 +17,27 @@
     "next": "Next",
     "experiences": [
       {
-        "name": "Valraiso",
-        "location": "Lyon",
-        "title": "AI Research Assistant",
-        "date_start": "2019-07",
-        "date_end": "2019-08",
-        "description": ["Hello World"],
-        "technologies": [
-          "Python3",
-          "Pandas",
-          "Scikit-Learn",
-          "MySQL",
-          "Git",
-          "Mac OS"
-        ]
-      },
-      {
-        "name": "ForCity",
-        "location": "Lyon",
-        "title": "Modeling Python Developer",
-        "date_start": "2019-04",
-        "date_end": "2019-06",
+        "name": "SmartShoot",
+        "location": "San Francisco",
+        "title": "Software Developer Junior",
+        "date_start": "2017-07",
+        "date_end": "2017-12",
         "description": [
-          "ForCity is a french start-up, which provide prospective tools to help private actors and public authorities to define the territory’s strategy.",
-          "..."
+          "I did my second year internship during which I did Python3 Web Developmentat at SmartShoot, a start-up.",
+          "SmartShoot is a worldwide leader in photograph services. Their marketplace provides to big companies (YouTube, Uber, ...) a large network of  professional photographers.",
+          "This experience allowed me to learn to work in a team using Agile development methods and to use the tools that support them. I have learned unitary and functional testing techniques as well as delivery processes in a professional environment."
         ],
         "technologies": [
           "Python3",
-          "Pandas",
+          "Pyramid",
           "pytest",
-          "MapServer",
-          "PostgreSQL",
+          "Selenium",
+          "Vue.js",
+          "MySQL",
+          "MongoDB",
+          "Jira",
           "Git",
-          "Linux"
+          "Mac OS"
         ]
       },
 
@@ -73,25 +61,39 @@
         ]
       },
       {
-        "name": "SmartShoot",
-        "location": "San Francisco",
-        "title": "Software Developer Junior",
-        "date_start": "2017-07",
-        "date_end": "2017-12",
+        "name": "ForCity",
+        "location": "Lyon",
+        "title": "Modeling Python Developer",
+        "date_start": "2019-04",
+        "date_end": "2019-07",
         "description": [
-          "I did my second year internship during which I did Python3 Web Developmentat at SmartShoot, a start-up.",
-          "SmartShoot is a worldwide leader in photograph services. Their marketplace provides to big companies (YouTube, Uber, ...) a large network of  professional photographers.",
-          "This experience allowed me to learn to work in a team using Agile development methods and to use the tools that support them. I have learned unitary and functional testing techniques as well as delivery processes in a professional environment."
+          "ForCity is a french start-up, which provide prospective tools to help private actors and public authorities to define the territory’s strategy.",
+          "..."
         ],
         "technologies": [
           "Python3",
-          "Pyramid",
+          "Pandas",
           "pytest",
-          "Selenium",
-          "Vue.js",
+          "MapServer",
+          "PostgreSQL",
+          "Git",
+          "Linux"
+        ]
+      },
+      {
+        "name": "Valraiso",
+        "location": "Lyon",
+        "title": "AI Research Assistant",
+        "date_start": "2020-04",
+        "date_end": "2020-09",
+        "description": ["Hello World"],
+        "technologies": [
+          "Python3",
+          "Pandas",
+          "Scikit-Learn",
+          "React",
+          "Node.js",
           "MySQL",
-          "MongoDB",
-          "Jira",
           "Git",
           "Mac OS"
         ]
@@ -128,7 +130,7 @@
         "technologies": []
       },
       {
-        "name": "Heriot-Watt University",
+        "name": "Heriot-Watt",
         "location": "Edinburgh",
         "title": "Master in Artificial Intelligence",
         "date_start": "2019-09",

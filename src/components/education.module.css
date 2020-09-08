@@ -79,6 +79,7 @@
   justify-content: center;
 
   padding: 10px;
+  padding-top: 25px;
 }
 
 .card {
@@ -89,6 +90,7 @@
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
+  position: relative;
 
   width: 400px;
   padding: 15px;
@@ -118,6 +120,19 @@
   background-color: var(--fg2-color);
   padding: 2px 5px;
   user-select: none;
+}
+
+.date {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-weight: 500;
+  transition: all 1s ease-in;
+}
+
+.hide {
+  opacity: 0;
 }
 
 .diplomaTitle {
@@ -192,10 +207,10 @@
   transition: all 0.2s linear;
   border-radius: 50%;
   cursor: pointer;
-  filter: brightness(25%);
+  filter: brightness(30%);
 }
 
-.arrow:hover .arrowImage {
+.arrow:hover {
   filter: brightness(0%);
 }
 

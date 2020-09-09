@@ -12,5 +12,10 @@
   "footer": {
     "contact": "Contactez-moi",
     "home": "Retour page d'accueil"
+  },
+
+  "noMatchPage": {
+    "error": "Erreur",
+    "message": "Page inexistante"
   }
 }

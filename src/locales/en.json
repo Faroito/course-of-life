@@ -151,5 +151,42 @@
         ]
       }
     ]
+  },
+
+  "contact": {
+    "title": "Contact Me",
+    "submit": "Submit",
+    "inputs": [
+      {
+        "title": "Name",
+        "text": "Enter your name",
+        "required": true
+      },
+      {
+        "title": "Email",
+        "text": "Enter your email",
+        "required": true
+      },
+      {
+        "title": "Phone",
+        "text": "Enter your phone number"
+      },
+      {
+        "title": "Subject",
+        "text": "Describe the subject",
+        "required": true
+      },
+      {
+        "title": "Message",
+        "text": "Write your message",
+        "type": "textarea",
+        "required": true
+      }
+    ]
+  },
+
+  "noMatchPage": {
+    "error": "Error",
+    "message": "Page not found"
   }
 }

@@ -1,0 +1,36 @@
+.input {
+  display: flex;
+  flex-direction: column;
+  width: 40vw;
+  justify-content: space-between;
+  margin: 8px 0px;
+}
+
+.title {
+  font-weight: 500;
+  margin-bottom: 3px;
+}
+
+.textInput,
+.textArea {
+  width: 100%;
+  border-radius: 5px;
+  padding: 2px 5px;
+  border: 1px solid var(--light-text-color);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+}
+
+.textInput {
+  height: 25px;
+}
+
+.textArea {
+  resize: none;
+  height: 160px;
+}
+
+.textInput:focus,
+.textArea:focus {
+  outline: var(--fg2-color) auto 1px;
+}

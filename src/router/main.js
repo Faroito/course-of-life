@@ -11,7 +11,7 @@ import NavBar from "../components/nav-bar";
 
 import css from "../pages/body.module.css";
 
-const Main = (language, setLanguage) => {
+const Main = ({ language, setLanguage }) => {
   const intl = useIntl();
   const location = useLocation();
 
@@ -29,7 +29,11 @@ const Main = (language, setLanguage) => {
 
   return (
     <div>
-      <NavBar language={language} setLanguage={setLanguage} />
+      <NavBar
+        language={language}
+        setLanguage={setLanguage}
+        location={location.pathname}
+      />
       <Switch>
         <Route exact path="/" component={Body} />
         <Route exact path="/contact-me" component={ContactMe} />

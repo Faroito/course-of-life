@@ -88,10 +88,10 @@
   z-index: 1;
 }
 
-.months {
+.duration {
   position: absolute;
   top: 50%;
-  left: -160px;
+  left: -165px;
   font-size: 0.9rem;
   font-weight: 500;
   white-space: nowrap;

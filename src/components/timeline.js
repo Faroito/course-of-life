@@ -25,7 +25,7 @@ const Timeline = ({ fold, date_start, date_end, duration, idx }) => {
     [css.timelineEnd]: idx === 0,
   });
   const dateInfo = classnames(css.dateInfo, { [css.hide]: fold });
-  const months = classnames(css.months, { [css.hide]: fold });
+  const durationStyle = classnames(css.duration, { [css.hide]: fold });
 
   return (
     <div className={timeline}>
@@ -37,7 +37,7 @@ const Timeline = ({ fold, date_start, date_end, duration, idx }) => {
         <span className={css.dateYear}>{start.format("YYYY")}</span>
         <div className={css.arrow} />
       </div>
-      <div className={months}>{durationText}</div>
+      <div className={durationStyle}>{durationText}</div>
     </div>
   );
 };

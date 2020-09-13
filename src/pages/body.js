@@ -4,12 +4,14 @@ import { useIntl } from "react-intl";
 
 import Education from "../components/education";
 import ExperienceCard from "../components/experience-card";
+import Intro from "../components/intro";
 import css from "./body.module.css";
 
 const Body = ({ body }) => {
   const intl = useIntl();
   return (
     <div className={css.body}>
+      <Intro />
       <div>{intl.messages.body.intro}</div>
       <h2 id="experiences">{intl.messages.navBar.experiences}</h2>
       <div className={css.experiences}>

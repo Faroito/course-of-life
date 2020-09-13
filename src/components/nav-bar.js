@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
 
 import classnames from "classnames";
-import css from "./nav-bar.module.css";
+import css from "./css/nav-bar.module.css";
 
 const NavBar = ({ language, setLanguage, location }) => {
   const intl = useIntl();

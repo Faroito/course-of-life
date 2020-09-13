@@ -3,7 +3,7 @@ import { useIntl } from "react-intl";
 import { Redirect } from "react-router-dom";
 
 import Form from "../components/input";
-import css from "./contact-me.module.css";
+import css from "./css/contact-me.module.css";
 
 const defaultForm = {
   date: Date.now(),

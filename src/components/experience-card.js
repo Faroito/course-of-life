@@ -4,7 +4,7 @@ import classnames from "classnames";
 import Timeline from "./timeline";
 
 import { clearName } from "../services/misc";
-import css from "./experience-card.module.css";
+import css from "./css/experience-card.module.css";
 
 const ExperienceCard = ({
   name,

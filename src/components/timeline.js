@@ -3,7 +3,7 @@ import classnames from "classnames";
 import moment from "moment";
 import { useIntl } from "react-intl";
 
-import css from "./timeline.module.css";
+import css from "./css/timeline.module.css";
 
 const Timeline = ({ fold, date_start, date_end, duration, idx }) => {
   const intl = useIntl();

@@ -9,8 +9,6 @@ import NoMatchPage from "../pages/no-match-page";
 import Footer from "../components/footer";
 import NavBar from "../components/nav-bar";
 
-import css from "../pages/body.module.css";
-
 const Main = ({ language, setLanguage }) => {
   const intl = useIntl();
   const location = useLocation();

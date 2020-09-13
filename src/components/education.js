@@ -5,7 +5,7 @@ import moment from "moment";
 
 import useScrollPosition from "../hooks/useScrollPosition";
 import { clearName } from "../services/misc";
-import css from "./education.module.css";
+import css from "./css/education.module.css";
 
 const cardPosition = [10, 530, 1050];
 const cardWidth = 520;

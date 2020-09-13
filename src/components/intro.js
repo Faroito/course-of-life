@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import moment from "moment";
 import { useIntl } from "react-intl";
 
-// import classnames from "classnames";
-import css from "./intro.module.css";
+import css from "./css/intro.module.css";
 
 const birthDate = moment("1998-03-11");
 

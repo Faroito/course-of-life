@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import classnames from "classnames";
-import css from "./input.module.css";
+import css from "./css/input.module.css";
 
 const Input = ({ form, setForm, title, text, isRequired, type = "input" }) => {
   const keyName = title.toLowerCase();

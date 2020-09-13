@@ -2,7 +2,7 @@ import React from "react";
 import { useIntl } from "react-intl";
 // import classnames from "classnames";
 
-import css from "./no-match-page.module.css";
+import css from "./css/no-match-page.module.css";
 
 const NoMatchPage = ({ location }) => {
   const intl = useIntl();

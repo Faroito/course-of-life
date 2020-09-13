@@ -5,7 +5,7 @@ import { useIntl } from "react-intl";
 import Education from "../components/education";
 import ExperienceCard from "../components/experience-card";
 import Intro from "../components/intro";
-import css from "./body.module.css";
+import css from "./css/body.module.css";
 
 const Body = ({ body }) => {
   const intl = useIntl();

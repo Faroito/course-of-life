@@ -1,4 +1,7 @@
 header {
+  position: absolute;
+  top: 0;
+
   display: grid;
   grid-template-columns: 70px 2fr 2fr 70px;
   grid-template-rows: 1fr;
@@ -6,7 +9,7 @@ header {
   align-items: center;
 
   width: 100%;
-  height: 70px;
+  height: var(--header-height);
   color: var(--light-text-color);
   background-color: var(--fg-color);
   user-select: none;

@@ -11,26 +11,24 @@
   margin-bottom: 20px;
 }
 
-.contact {
+.form {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 50vw;
   padding: 20px;
-  margin: 50px;
+  margin: 40px;
 
   border-radius: 20px;
   background-color: #ffffff;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
-.form {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.requiredMessage {
+  width: 40vw;
+  font-size: 0.9rem;
+  margin: 12px 0px;
 }
 
 .submit {

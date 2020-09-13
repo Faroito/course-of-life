@@ -13,7 +13,6 @@
 
 .textInput,
 .textArea {
-  width: 100%;
   border-radius: 5px;
   padding: 2px 5px;
   border: 1px solid var(--light-text-color);
@@ -33,4 +32,8 @@
 .textInput:focus,
 .textArea:focus {
   outline: var(--fg2-color) auto 1px;
+}
+
+.required {
+  outline: var(--incorrect-color) auto 1px;
 }

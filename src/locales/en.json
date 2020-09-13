@@ -156,31 +156,24 @@
   "contact": {
     "title": "Contact Me",
     "submit": "Submit",
+    "required": "All fields are required.",
     "inputs": [
       {
         "title": "Name",
-        "text": "Enter your name",
-        "required": true
+        "text": "Enter your name"
       },
       {
         "title": "Email",
-        "text": "Enter your email",
-        "required": true
-      },
-      {
-        "title": "Phone",
-        "text": "Enter your phone number"
+        "text": "Enter your email"
       },
       {
         "title": "Subject",
-        "text": "Describe the subject",
-        "required": true
+        "text": "Describe the subject"
       },
       {
         "title": "Message",
         "text": "Write your message",
-        "type": "textarea",
-        "required": true
+        "type": "textarea"
       }
     ]
   },

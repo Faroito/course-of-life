@@ -4,8 +4,10 @@
   --fg2-color: #3f72af;
   --dark-text-color: #0b1c31;
   --light-text-color: #dbe2ef;
+  --incorrect-color: #af443f;
 
   --footer-height: 100px;
+  --header-height: 70px;
 }
 
 /* || GENERAL STYLES */

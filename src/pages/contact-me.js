@@ -30,7 +30,6 @@ const ContactMe = ({ contact }) => {
     );
     const fieldsCompleted = missingKey === -1;
 
-    if (fieldsCompleted) setForm(defaultForm);
     setTrySubmit(fieldsCompleted ? false : true);
     setRedirect(fieldsCompleted ? true : false);
   };

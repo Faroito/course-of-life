@@ -5,12 +5,18 @@ import { useIntl } from "react-intl";
 
 import css from "./timeline.module.css";
 
-const Timeline = ({ fold, date_start, date_end, idx }) => {
+const Timeline = ({ fold, date_start, date_end, duration, idx }) => {
   const intl = useIntl();
 
   const start = moment(date_start);
   const end = moment(date_end);
-  const monthNb = end.diff(start, "month") + 1;
+
+  const monthNb = duration ? duration : end.diff(start, "month") + 1;
+  const isMonth = monthNb < 24;
+  const durationText = isMonth
+    ? monthNb.toString().concat(intl.messages.cards.months)
+    : (monthNb / 12).toString().concat(intl.messages.cards.years);
+
   const len = intl.messages.cards.experiences.length;
 
   const timeline = classnames(css.timeline, {
@@ -31,7 +37,7 @@ const Timeline = ({ fold, date_start, date_end, idx }) => {
         <span className={css.dateYear}>{start.format("YYYY")}</span>
         <div className={css.arrow} />
       </div>
-      <div className={months}>{monthNb} month</div>
+      <div className={months}>{durationText}</div>
     </div>
   );
 };

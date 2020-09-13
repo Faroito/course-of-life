@@ -12,6 +12,7 @@ const ExperienceCard = ({
   location,
   date_start,
   date_end,
+  duration,
   description,
   technologies,
   idx,
@@ -85,6 +86,7 @@ const ExperienceCard = ({
         fold={fold}
         date_start={date_start}
         date_end={date_end}
+        duration={duration}
         idx={idx}
       />
     </div>

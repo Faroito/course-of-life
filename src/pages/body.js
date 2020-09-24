@@ -12,16 +12,19 @@ const Body = ({ body }) => {
   return (
     <div className={css.body}>
       <Intro />
-      <div>{intl.messages.body.intro}</div>
-      <h2 id="experiences">{intl.messages.navBar.experiences}</h2>
+      <h2 id="experiences" className={css.partTitle}>
+        {intl.messages.navBar.experiences}
+      </h2>
       <div className={css.experiences}>
         {intl.messages.cards.experiences.map((experience, index) => {
           return <ExperienceCard {...experience} idx={index} key={index} />;
         })}
       </div>
-      <h2 id="skills">{intl.messages.navBar.skills}</h2>
+      {/* <h2 id="skills" className={css.partTitle}>{intl.messages.navBar.skills}</h2> */}
       <div></div>
-      <h2 id="education">{intl.messages.navBar.education}</h2>
+      <h2 id="education" className={css.partTitle}>
+        {intl.messages.navBar.education}
+      </h2>
       <Education />
     </div>
   );

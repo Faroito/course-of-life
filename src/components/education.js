@@ -13,13 +13,15 @@ const cardWidth = 520;
 const EducationCard = ({ education }) => {
   const [selected, setSelected] = useState(0);
   const [onCard, setOnCard] = useState();
-  const scroolRef = useRef(null);
-  const scrollPosition = useScrollPosition(scroolRef);
+  const scrollRef = useRef(null);
+  const scrollPosition = useScrollPosition(scrollRef);
 
   const changeSelection = (idx) => (e) => {
-    scroolRef.current.scrollLeft = cardPosition[idx];
+    scrollRef.current.scrollLeft = cardPosition[idx];
     setSelected(idx);
   };
+
+  console.log(scrollPosition);
 
   useEffect(() => {
     const leftPos = scrollPosition.left;
@@ -67,7 +69,7 @@ const EducationCard = ({ education }) => {
         })}
       </div>
       <div className={css.slider}>
-        <div className={css.slides} ref={scroolRef}>
+        <div className={css.slides} ref={scrollRef}>
           {schools.map((school, index) => {
             const start = moment(school.date_start);
             const end = moment(school.date_end);

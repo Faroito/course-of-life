@@ -1,22 +1,53 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useIntl } from "react-intl";
+
+import useScrollPosition from "../hooks/useScrollPosition";
+import useWindowSize from "../hooks/useWindowSize";
 
 import classnames from "classnames";
 import css from "./css/nav-bar.module.css";
 
 const NavBar = ({ language, setLanguage, location }) => {
   const intl = useIntl();
+  const windowSize = useWindowSize();
+  const scrollPosition = useScrollPosition();
+  const [selected, setSelected] = useState(false);
 
   const languageChanged = (lang) => (e) => {
     setLanguage(lang);
   };
 
+  const onClick = (e) => {
+    setSelected(!selected);
+  };
+
   const isHomePage = location === "/";
   const name = classnames(css.name, { [css.noNav]: !isHomePage });
+  const menuStyle = classnames(css.logo, css.menuLogo, {
+    [css.darkMenuLogo]: scrollPosition.top > windowSize.height * 0.7,
+  });
+  const filter = classnames({ [css.filterPage]: selected });
 
+  if (isHomePage)
+    return (
+      <div className={filter}>
+        <img
+          src="icons/menu.svg"
+          alt="menu"
+          className={menuStyle}
+          onClick={onClick}
+        />
+        {selected && (
+          <div>
+            <div className={css.sideBar}></div>
+            <div className={css.clickablePage} onClick={onClick} />
+          </div>
+        )}
+      </div>
+    );
   return (
-    <header>
+    <header className={css.header}>
       <Link to="/">
         <img src="tim_logo.svg" alt="" className={css.logo} />
       </Link>

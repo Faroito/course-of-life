@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IntlProvider } from "react-intl";
-// import classnames from "classnames";
+import { useLocation } from "react-router-dom";
+import classnames from "classnames";
 
 import en from "./locales/en.json";
 import fr from "./locales/fr.json";
@@ -28,13 +29,16 @@ const onUpdate = () => {
 const App = () => {
   // const [language, setLanguage] = useState(navigator.language.split(/[-_]/)[0]);
   const [language, setLanguage] = useState("en");
+  const location = useLocation();
 
   matcher.addListener(onUpdate);
   onUpdate();
 
+  const app = classnames(css.app, { [css.noNav]: location.pathname === "/" });
+
   return (
     <IntlProvider locale={language} messages={messages[language]}>
-      <div className={css.app}>
+      <div className={app}>
         <Main language={language} setLanguage={setLanguage} />
       </div>
     </IntlProvider>

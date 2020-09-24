@@ -1,4 +1,4 @@
-header {
+.header {
   position: absolute;
   top: 0;
 
@@ -35,6 +35,49 @@ header {
 
 .logo:hover {
   filter: brightness(200%);
+}
+
+.menuLogo {
+  position: fixed;
+  z-index: 3;
+  top: 15px;
+  left: 10px;
+  transition: all 0.1s linear;
+}
+
+.darkMenuLogo {
+  filter: brightness(20%);
+}
+
+.darkMenuLogo:hover {
+  filter: brightness(70%);
+}
+
+.filterPage ~ div {
+  filter: grayscale(50%);
+}
+
+.filterPage ~ footer {
+  filter: grayscale(50%);
+}
+
+.clickablePage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+}
+
+.sideBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background-color: var(--fg-color);
+  z-index: 5;
 }
 
 .nav {

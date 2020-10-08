@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { useIntl } from "react-intl";
 
 import useScrollPosition from "../hooks/useScrollPosition";
 import useWindowSize from "../hooks/useWindowSize";
@@ -8,82 +6,67 @@ import useWindowSize from "../hooks/useWindowSize";
 import classnames from "classnames";
 import css from "./css/nav-bar.module.css";
 
-const NavBar = ({ language, setLanguage, location }) => {
-  const intl = useIntl();
+const LangMenu = ({ language, setLanguage, topDark }) => {
   const windowSize = useWindowSize();
   const scrollPosition = useScrollPosition();
-  const [selected, setSelected] = useState(false);
+  const [over, setOver] = useState(false);
 
   const languageChanged = (lang) => (e) => {
     setLanguage(lang);
   };
 
-  const onClick = (e) => {
-    setSelected(!selected);
+  const onOver = (status) => (e) => {
+    setOver(status);
   };
 
-  const isHomePage = location === "/";
-  const name = classnames(css.name, { [css.noNav]: !isHomePage });
-  const menuStyle = classnames(css.logo, css.menuLogo, {
-    [css.darkMenuLogo]: scrollPosition.top > windowSize.height * 0.7,
+  const isDarkMode = scrollPosition.top > windowSize.height * topDark;
+  const langMenuTop = over ? 0 : -42;
+  const banner = classnames(css.banner, {
+    [css.darkBanner]: isDarkMode,
   });
-  const filter = classnames({ [css.filterPage]: selected });
+  const langSelector = classnames(css.langSelector, {
+    [css.darkLangSelector]: isDarkMode,
+  });
+  return (
+    <div
+      className={css.langMenu}
+      onMouseEnter={onOver(true)}
+      onMouseLeave={onOver(false)}
+      style={{ top: langMenuTop }}
+    >
+      <div className={langSelector}>
+        <img
+          src="flags/fr.svg"
+          alt="Mettre en Français"
+          className={css.langLogo}
+          onClick={languageChanged("fr")}
+        />
+        <img
+          src="flags/en.svg"
+          alt="Set in English"
+          className={css.langLogo}
+          onClick={languageChanged("en")}
+        />
+      </div>
+      <div className={banner}>
+        <img src="icons/banner.svg" alt="language" />
+        <div>{language.toUpperCase()}</div>
+      </div>
+    </div>
+  );
+};
+
+const NavBar = ({ language, setLanguage, location }) => {
+  const isHomePage = location === "/";
 
   if (isHomePage)
     return (
-      <div className={filter}>
-        <img
-          src="icons/menu.svg"
-          alt="menu"
-          className={menuStyle}
-          onClick={onClick}
-        />
-        {selected && (
-          <div>
-            <div className={css.sideBar}></div>
-            <div className={css.clickablePage} onClick={onClick} />
-          </div>
-        )}
-      </div>
+      <LangMenu language={language} setLanguage={setLanguage} topDark={0.78} />
     );
   return (
     <header className={css.header}>
-      <Link to="/">
-        <img src="tim_logo.svg" alt="" className={css.logo} />
-      </Link>
-      <h1 className={name}>Timothée Couble</h1>
-      {isHomePage && (
-        <div className={css.nav}>
-          <a className={css.navItem} href="#experiences">
-            {intl.messages.navBar.experiences}
-          </a>
-          <a className={css.navItem} href="#skills">
-            {intl.messages.navBar.skills}
-          </a>
-          <a className={css.navItem} href="#education">
-            {intl.messages.navBar.education}
-          </a>
-          {/* <a className={css.navItem}>Personal Project</a> */}
-        </div>
-      )}
-      <div>
-        {language === "en" && (
-          <img
-            src="flags/fr.svg"
-            alt="Mettre en Français"
-            className={css.lang}
-            onClick={languageChanged("fr")}
-          />
-        )}
-        {language === "fr" && (
-          <img
-            src="flags/en.svg"
-            alt="Set in English"
-            className={css.lang}
-            onClick={languageChanged("en")}
-          />
-        )}
-      </div>
+      <h1 className={css.name}>Timothée Couble</h1>
+      <LangMenu language={language} setLanguage={setLanguage} topDark={0.1} />;
     </header>
   );
 };

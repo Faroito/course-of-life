@@ -19,11 +19,13 @@ const Intro = ({ intro }) => {
       <div className={css.intro}>
         <div className={css.presentation}>
           <h1 className={css.name}>Timothée Couble</h1>
-          <div className={css.qualifier}>{intl.messages.intro.title}</div>
-          <div className={css.qualifier}>
-            {age + " " + intl.messages.intro.years}
+          <div>
+            <div className={css.qualifier}>{intl.messages.intro.title}</div>
+            <div className={css.qualifier}>
+              {age + " " + intl.messages.intro.years}
+            </div>
+            <div className={css.qualifier}>{intl.messages.intro.location}</div>
           </div>
-          <div className={css.qualifier}>{intl.messages.intro.location}</div>
           <div className={css.iconList}>
             <a
               className={css.icon}

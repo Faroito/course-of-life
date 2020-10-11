@@ -1,17 +1,203 @@
 {
-  "navBar": {
-    "experiences": "Expériences",
-    "skills": "Compétences",
-    "education": "Études"
+  "intro": {
+    "title": "Ingénieur en développement",
+    "years": "ans",
+    "location": "Lyon, France",
+    "subtitle": "Looking for a 6 month internship",
+    "description": "Interested in artificial intelligence and machine learning, I’m looking for an internship where I can contribute with my skills in C, C++, Python and Javascript (Vue.Js, React)."
   },
 
   "body": {
-    "intro": "Bonjour le Monde"
+    "experiences": "Expériences",
+    "education": "Études",
+    "projects": "Projets Personnels",
+    "projects_button": "Voir les Projets Personnels"
   },
 
   "footer": {
     "contact": "Contactez-moi",
-    "home": "Retour page d'accueil"
+    "home": "Retour au CV"
+  },
+
+  "cards": {
+    "technologies_used": "Technologies utilisées:",
+    "technologies_learnt": "Technologies apprises:",
+    "unfold": "Détail",
+    "previous": "Précédent",
+    "next": "Suivant",
+    "months": " mois",
+    "years": " années",
+    "experiences": [
+      {
+        "name": "SmartShoot",
+        "location": "San Francisco",
+        "title": "Software Developer Junior",
+        "date_start": "2017-07",
+        "date_end": "2017-12",
+        "description": [
+          "SmartShoot est le leader américain de la mise en relation entre des photographes professionnels et des grands clients tel que UberEats et Airbnb.",
+          "Dans une équipe qui applique la méthodologie Agile, déveleppement d'application web en Vue.js / Python avec le framework Pyramid. Déveleppement d'un environement de test unitaire et fonctionnel au service de la plateforme.",
+          "6 mois de stage de deuxième année en immersion dans une équipe anglophone."
+        ],
+        "technologies": [
+          "Python3",
+          "Pyramid",
+          "pytest",
+          "Selenium",
+          "Vue.js",
+          "MySQL",
+          "MongoDB",
+          "Jira",
+          "Git",
+          "Mac OS"
+        ]
+      },
+
+      {
+        "name": "Epitech",
+        "location": "Lyon",
+        "title": "AER - Assistant Pédagogique",
+        "date_start": "2018-02",
+        "date_end": "2021-02",
+        "duration": 18,
+        "description": [
+          "Assistant à temps partielle pour le suivis des étudiants de première, deuxième et troisième en parralle de mes études.",
+          "Supervision des étudiants, corrections de projets, coaching des équipes projets.",
+          "Ces missions au sein de l'école m'ont permis de suivre des 3 formations qui me sont validé par une certification (Teaching & Coaching)."
+        ],
+        "technologies": [
+          "C",
+          "C++",
+          "Bash",
+          "Docker",
+          "Jenkins",
+          "Git",
+          "Linux"
+        ]
+      },
+      {
+        "name": "ForCity",
+        "location": "Lyon",
+        "title": "Développeur Python",
+        "date_start": "2019-04",
+        "date_end": "2019-08",
+        "description": [
+          "ForCity est une start-up française, qui fournit des outils de modélisation et simuation pour optimiser les ressources du territoire (chauffages, déchets, ...).",
+          "Développeur Python dans l'équipe de modélisation de la gestion des déchets de la métropole de Lyon.",
+          "Intervation dans les outils de modélisation et de la gestion cartographique dans une équipe \"Agile\" de 6 personnes."
+        ],
+        "technologies": [
+          "Python3",
+          "Pandas",
+          "pytest",
+          "MapServer",
+          "PostgreSQL",
+          "Git",
+          "Linux"
+        ]
+      },
+      {
+        "name": "Valraiso",
+        "location": "Lyon",
+        "title": "Ingénieur en développement",
+        "date_start": "2020-04",
+        "date_end": "2020-09",
+        "description": [
+          "Valraiso est une société d'ingénérie e-commerce dans le domaine du tourisme de montagne",
+          "Dans le département de R&D, mise en oeuvre de techniques de clustering et de machine learning pour une applications marqueting d'assitence au choix d'un séjour de ski.",
+          "Déveleppement d'une application React / Node.js."
+        ],
+        "technologies": [
+          "Python3",
+          "Pandas",
+          "Scikit-Learn",
+          "React",
+          "Node.js",
+          "MySQL",
+          "Git",
+          "Mac OS"
+        ]
+      }
+    ],
+    "educations": [
+      {
+        "name": "Epitech",
+        "location": "Lyon",
+        "title": "Master en Informatique",
+        "title_bis": "Expert en Technologies de l’Information",
+        "date_start": "2016-09",
+        "date_end": "2021-08",
+        "description": [
+          "Epitech est une formation en 5 ans pour une expertise informatique et en innovation.",
+          "L'Epitech est caractérisé par une pédagogie active, inductive et par projets.",
+          "Le travail en groupe permanent permet de dévelloper des valeurs de solidarité, de communication et d'autonomie."
+        ],
+        "technologies": [
+          "C",
+          "C++",
+          "SFML",
+          "CMake",
+          "Python3",
+          "Haskell",
+          "Bash",
+          "Git",
+          "Linux"
+        ]
+      },
+      {
+        "name": "Ionis STM",
+        "location": "Paris",
+        "title": "Teaching & Coaching Diploma",
+        "date_start": "2017-07",
+        "date_end": "2021-02",
+        "description": ["Educational / pedagogical technology"],
+        "technologies": []
+      },
+      {
+        "name": "Heriot-Watt",
+        "location": "Edinburgh",
+        "title": "Master en Intelligence Artificielle",
+        "date_start": "2019-09",
+        "date_end": "2020-08",
+        "description": [
+          "Formation accadémique en anglais dans les domaines d'IA, Big Data, Graphics Computation.",
+          "Rédaction d'une thèse de master d'une durée de 5 mois sur le sujet de \"Emails Classification using Natural Language Processing and Classification Techniques\"."
+        ],
+        "technologies": [
+          "Python3",
+          "Scikit-Learn",
+          "C++",
+          "OpenGl",
+          "SPARQL",
+          "Neo4j"
+        ]
+      }
+    ]
+  },
+
+  "contact": {
+    "title": "Contactez-Moi",
+    "submit": "Soumettre",
+    "required": "Tous les champs sont obligatoires.",
+    "inputs": [
+      {
+        "title": "Nom",
+        "text": "Entrez votre nom"
+      },
+      {
+        "title": "Email",
+        "text": "Entrez votre email"
+      },
+      {
+        "title": "Objet",
+        "text": "Entrez votre objet"
+      },
+      {
+        "title": "Message",
+        "text": "Écrivez votre message",
+        "type": "textarea"
+      }
+    ]
   },
 
   "noMatchPage": {

@@ -61,14 +61,17 @@ const NavBar = ({ language, setLanguage, location }) => {
 
   if (isHomePage)
     return (
-      <LangMenu language={language} setLanguage={setLanguage} topDark={0.78} />
+      <LangMenu language={language} setLanguage={setLanguage} topDark={0.82} />
     );
-  return (
-    <header className={css.header}>
-      <h1 className={css.name}>Timothée Couble</h1>
-      <LangMenu language={language} setLanguage={setLanguage} topDark={0.1} />;
-    </header>
-  );
+  else {
+    return (
+      <header className={css.header}>
+        <h1 className={css.name}>Timothée Couble</h1>
+        <LangMenu language={language} setLanguage={setLanguage} topDark={0.1} />
+        ;
+      </header>
+    );
+  }
 };
 
 export default NavBar;

@@ -1,0 +1,48 @@
+.iconsList {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.iconContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.iconText {
+  font-size: 0.7rem;
+  white-space: nowrap;
+  padding: 2px 5px;
+  border-radius: 20px;
+  color: #ffffff;
+  background-color: var(--fg2-color);
+
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  visibility: hidden;
+  z-index: 1;
+}
+
+.iconContainer:hover .iconText {
+  visibility: visible;
+}
+
+.icons {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.iconContainer:hover .icons {
+  opacity: 0.5;
+}

@@ -1,20 +1,17 @@
 {
-  "navBar": {
-    "experiences": "Experiences",
-    "skills": "Technical Skills",
-    "education": "Education"
-  },
-
-  "body": {
-    "intro": "<photo> / <intro> / Languages: French, English"
-  },
-
   "intro": {
     "title": "Software Developer",
     "years": "years old",
     "location": "Lyon, France",
     "subtitle": "Looking for a 6 month internship",
     "description": "Interested in artificial intelligence and machine learning, I’m looking for an internship where I can contribute with my skills in C, C++, Python and Javascript (Vue.Js, React)."
+  },
+
+  "body": {
+    "experiences": "Experiences",
+    "education": "Education",
+    "projects": "Personnal Projects",
+    "projects_button": "See Personnal Projects"
   },
 
   "footer": {
@@ -81,7 +78,7 @@
         "location": "Lyon",
         "title": "Modeling Python Developer",
         "date_start": "2019-04",
-        "date_end": "2019-07",
+        "date_end": "2019-08",
         "description": [
           "ForCity is a french start-up, which provide prospective tools to help private actors and public authorities to define the territory’s strategy.",
           "..."

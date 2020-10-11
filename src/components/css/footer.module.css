@@ -16,7 +16,7 @@ footer {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
-.contact {
+.button {
   place-self: center;
   padding: 10px 20px;
   border-radius: 20px;
@@ -29,7 +29,7 @@ footer {
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
-.contact:hover {
+.button:hover {
   color: var(--fg-color);
   background-color: var(--light-text-color);
 }

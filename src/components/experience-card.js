@@ -4,6 +4,8 @@ import classnames from "classnames";
 import Timeline from "./timeline";
 
 import { clearName } from "../services/misc";
+import IconsList from "./icons-list";
+
 import css from "./css/experience-card.module.css";
 
 const ExperienceCard = ({
@@ -69,17 +71,7 @@ const ExperienceCard = ({
           <div className={techStyle}>
             {intl.messages.cards.technologies_used}
           </div>
-          <div className={css.iconsList}>
-            {technologies.map((tech, index) => {
-              const fileName = "icons/tech/" + clearName(tech) + ".svg";
-              return (
-                <div className={css.iconContainer} key={index}>
-                  <img src={fileName} alt="" className={css.icons} />
-                  <p className={css.iconText}>{tech}</p>
-                </div>
-              );
-            })}
-          </div>
+          <IconsList icons={technologies} />
         </div>
       </div>
       <Timeline

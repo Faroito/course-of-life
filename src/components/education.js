@@ -5,6 +5,8 @@ import moment from "moment";
 
 import useScrollPosition from "../hooks/useScrollPosition";
 import { clearName } from "../services/misc";
+import IconsList from "./icons-list";
+
 import css from "./css/education.module.css";
 
 const cardPosition = [10, 530, 1050];
@@ -20,8 +22,6 @@ const EducationCard = ({ education }) => {
     scrollRef.current.scrollLeft = cardPosition[idx];
     setSelected(idx);
   };
-
-  console.log(scrollPosition);
 
   useEffect(() => {
     const leftPos = scrollPosition.left;
@@ -104,22 +104,7 @@ const EducationCard = ({ education }) => {
                   {school.technologies.length !== 0 && (
                     <div className={css.technologiesWrapper}>
                       <span>{intl.messages.cards.technologies_learnt}</span>
-                      <div className={css.iconsList}>
-                        {school.technologies.map((tech, index) => {
-                          const fileName =
-                            "icons/tech/" + clearName(tech) + ".svg";
-                          return (
-                            <div className={css.iconContainer} key={index}>
-                              <img
-                                src={fileName}
-                                alt=""
-                                className={css.icons}
-                              />
-                              <p className={css.iconText}>{tech}</p>
-                            </div>
-                          );
-                        })}
-                      </div>
+                      <IconsList icons={school.technologies} />
                     </div>
                   )}
                 </div>

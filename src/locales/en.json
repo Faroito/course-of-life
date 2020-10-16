@@ -35,9 +35,9 @@
         "date_start": "2017-07",
         "date_end": "2017-12",
         "description": [
-          "I did my second year internship during which I did Python3 Web Developmentat at SmartShoot, a start-up.",
-          "SmartShoot is a worldwide leader in photograph services. Their marketplace provides to big companies (YouTube, Uber, ...) a large network of  professional photographers.",
-          "This experience allowed me to learn to work in a team using Agile development methods and to use the tools that support them. I have learned unitary and functional testing techniques as well as delivery processes in a professional environment."
+          "SmartShoot is USA leader in connecting professional photographers with major clients such as UberEats and Airbnb",
+          "In Agile teams, development of web applications in Vue.js / Python with the Pyramid framework. Development of a unitary and functional test environment for the platform",
+          "6 months of second year internship in an English-speaking team."
         ],
         "technologies": [
           "Python3",
@@ -61,7 +61,9 @@
         "date_end": "2021-02",
         "duration": 18,
         "description": [
-          "Part time job to support first and second year students in their scholarship: project assistance, technical advisory..."
+          "Part-time assistant for the follow-up of the first, second and third students during my studies",
+          "Supervision of students, project corrections, coaching of students teams.",
+          "These missions within the school allowed me to follow 3 trainings which are validated by a certification (Teaching & Coaching)."
         ],
         "technologies": [
           "C",
@@ -80,8 +82,9 @@
         "date_start": "2019-04",
         "date_end": "2019-08",
         "description": [
-          "ForCity is a french start-up, which provide prospective tools to help private actors and public authorities to define the territory’s strategy.",
-          "..."
+          "ForCity is a French start-up, which provides modeling and simulation tools to optimize the resources of the territory (heating, waste, ...)",
+          "Python developer in the waste management modeling team of the metropolis of Lyon",
+          "Interaction in modeling and cartographic management tools in an \"Agile\" team of 6 people."
         ],
         "technologies": [
           "Python3",
@@ -99,7 +102,11 @@
         "title": "AI Research Assistant",
         "date_start": "2020-04",
         "date_end": "2020-09",
-        "description": ["Hello World"],
+        "description": [
+          "Valraiso is an e-commerce engineering company in the field of mountain tourism",
+          "In the R&D department, implementation of clustering techniques and machine learning for a marqueting application for the choice of a ski trip",
+          "Development of a React / Node.js. application."
+        ],
         "technologies": [
           "Python3",
           "Pandas",
@@ -120,7 +127,11 @@
         "title_bis": "Expert in Information Technologies",
         "date_start": "2016-09",
         "date_end": "2021-08",
-        "description": ["Hello World"],
+        "description": [
+          "Epitech is a 5 year training course for IT expertise and innovation",
+          "Epitech is characterized by an active, inductive and project-based pedagogy",
+          "The work in permanent groups allows the development of values of solidarity, communication and autonomy."
+        ],
         "technologies": [
           "C",
           "C++",
@@ -148,7 +159,10 @@
         "title": "Master in Artificial Intelligence",
         "date_start": "2019-09",
         "date_end": "2020-08",
-        "description": ["Hello World"],
+        "description": [
+          "Accademic training in English in the fields of AI, Big Data, Graphics Computation",
+          "Writing of a 5 month master thesis on the subject of \"Emails Classification using Natural Language Processing and Classification Techniques\"."
+        ],
         "technologies": [
           "Python3",
           "Scikit-Learn",

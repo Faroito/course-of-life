@@ -10,10 +10,17 @@ const Footer = ({ link, text }) => {
         <a
           className={css.icon}
           href="https://www.linkedin.com/in/timothee-couble/"
+          rel="noopener noreferrer"
+          target="_blank"
         >
           <img src="icons/linkedin.svg" alt="linkedin" className={css.logo} />
         </a>
-        <a className={css.icon} href="https://github.com/Faroito">
+        <a
+          className={css.icon}
+          href="https://github.com/Faroito"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
           <img src="icons/github.svg" alt="github" className={css.logo} />
         </a>
       </div>

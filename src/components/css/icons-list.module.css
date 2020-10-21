@@ -22,7 +22,7 @@
   white-space: nowrap;
   padding: 2px 5px;
   border-radius: 20px;
-  color: #ffffff;
+  color: white;
   background-color: var(--fg2-color);
 
   position: absolute;

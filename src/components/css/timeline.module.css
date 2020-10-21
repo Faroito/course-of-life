@@ -34,7 +34,7 @@
   left: 68px;
   font-weight: 500;
   white-space: nowrap;
-  /* color: #ffffff; */
+  /* color: white; */
   /* background-color: var(--fg-color); */
   /* padding: 2px 5px; */
 
@@ -84,7 +84,7 @@
   padding-right: 1px;
   font-size: 0.9rem;
   font-weight: 500;
-  color: #ffffff;
+  color: white;
   z-index: 1;
 }
 
@@ -95,7 +95,7 @@
   font-size: 0.9rem;
   font-weight: 500;
   white-space: nowrap;
-  color: #ffffff;
+  color: white;
   background-color: var(--fg-color);
   padding: 2px 5px;
   user-select: none;

@@ -19,7 +19,7 @@
 }
 
 .extendedBackground {
-  height: 65vh;
+  height: 600px;
 }
 
 .button {
@@ -30,7 +30,7 @@
   user-select: none;
   cursor: pointer;
   opacity: 1;
-  transition: all 0.1s ease;
+  transition: opacity 0.1s ease;
 
   font-weight: 500;
   color: var(--light-text-color);
@@ -45,6 +45,7 @@
 
 .hide {
   opacity: 0;
+  cursor: initial;
 }
 
 .title {
@@ -57,6 +58,161 @@
   width: 60vw;
   height: 70%;
   border-radius: 30px;
-  background-color: white;
+  display: flex;
+  align-items: center;
+  background-color: var(--bg-color);
   box-shadow: inset 0 0px 14px 0px rgba(0, 0, 0, 0.8);
+}
+
+.menu {
+  height: 100%;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonMenu {
+  width: 70%;
+  height: 60px;
+  margin: 24px 4px;
+  border-radius: 20px;
+  text-decoration: none;
+  user-select: none;
+  cursor: pointer;
+  opacity: 1;
+  transition: all 0.1s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--dark-text-color);
+  border: 2px solid var(--bg-color);
+  background-color: white;
+  box-shadow: inset 0 0px 8px 0 rgba(0, 0, 0, 0.13);
+  cursor: pointer;
+}
+
+.buttonMenu:hover {
+  border: 2px solid white;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.buttonMenuSelected {
+  border: 2px solid var(--fg-color);
+}
+
+.buttonMenuSelected:hover {
+  border: 2px solid var(--fg-color);
+}
+
+.line {
+  width: 1px;
+  height: 70%;
+  background-color: var(--fg-color);
+}
+
+.presentation {
+  width: 65%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.presentation > div {
+  width: 70%;
+  height: 70%;
+  padding: 5%;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: auto;
+}
+
+.projectName {
+  font-size: 1.4rem;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  height: 25px;
+  width: 25px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 25px;
+  background-color: var(--fg-color);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: var(--bg-color);
+}
+
+.logo {
+  object-fit: cover;
+  width: 15px;
+
+  transition: color 0.3s ease;
+}
+.icon:hover .logo {
+  filter: brightness(20%);
+}
+
+.projectTitle {
+  font-weight: 500;
+}
+
+.description {
+  font-size: 0.8rem;
+  text-align: justify;
+}
+
+.demo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.demo > div {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 20px;
+  color: var(--light-text-color);
+  background-color: var(--fg2-color);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  user-select: none;
+  cursor: pointer;
+}
+
+.demo > div:hover {
+  background-color: var(--fg-color);
+}
+
+.technologiesWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.technologiesWrapper > span {
+  margin-top: 10px;
+  margin-right: 10px;
+  white-space: nowrap;
+}
+
+.gif {
+  object-fit: cover;
 }

@@ -21,7 +21,7 @@
   width: 120px;
   height: 60px;
 
-  background-color: #ffffff;
+  background-color: white;
   padding: 15px 25px;
   border-radius: 20px;
   margin: 3px 3px;
@@ -97,7 +97,7 @@
   margin: 10px;
   margin: 0px 35px;
   border-radius: 20px;
-  background-color: #ffffff;
+  background-color: white;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -116,7 +116,7 @@
 
 .location {
   font-size: 0.9rem;
-  color: #ffffff;
+  color: white;
   background-color: var(--fg2-color);
   padding: 2px 5px;
   user-select: none;

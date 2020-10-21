@@ -144,34 +144,6 @@
   align-items: center;
 }
 
-.icon {
-  height: 25px;
-  width: 25px;
-  margin-left: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border-radius: 25px;
-  background-color: var(--fg-color);
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-}
-
-.icon:hover {
-  background-color: var(--bg-color);
-}
-
-.logo {
-  object-fit: cover;
-  width: 15px;
-
-  transition: color 0.3s ease;
-}
-.icon:hover .logo {
-  filter: brightness(20%);
-}
-
 .projectTitle {
   font-weight: 500;
 }
@@ -184,13 +156,14 @@
 .demo {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
-.demo > div {
+.demo > span {
   padding: 10px 20px;
   text-align: center;
   border-radius: 20px;
+  font-weight: 500;
   color: var(--light-text-color);
   background-color: var(--fg2-color);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
@@ -198,8 +171,37 @@
   cursor: pointer;
 }
 
-.demo > div:hover {
+.demo > span:hover {
   background-color: var(--fg-color);
+}
+
+.icon {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 25px;
+  background-color: var(--fg2-color);
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: var(--fg-color);
+}
+
+.logo {
+  object-fit: cover;
+  width: 18px;
+
+  transition: color 0.3s ease;
+}
+
+.demoTV {
+  cursor: pointer;
+  border: 2px solid var(--fg-color);
 }
 
 .technologiesWrapper {

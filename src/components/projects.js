@@ -64,18 +64,6 @@ const Projects = ({ test }) => {
                   <div>
                     <div className={css.projectName}>
                       {projects[selected].name}
-                      <a
-                        className={css.icon}
-                        href={projects[selected].link}
-                        rel="noopener noreferrer"
-                        target="_blank"
-                      >
-                        <img
-                          src="icons/github.svg"
-                          alt="github"
-                          className={css.logo}
-                        />
-                      </a>
                     </div>
                     <span className={css.projectTitle}>
                       {projects[selected].title}
@@ -92,7 +80,19 @@ const Projects = ({ test }) => {
                     })}
                   </div>
                   <div className={css.demo}>
-                    <div onClick={toggleDemo()}>See Demo</div>
+                    <span onClick={toggleDemo()}>See Demo</span>
+                    <a
+                      className={css.icon}
+                      href={projects[selected].link}
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      <img
+                        src="icons/github.svg"
+                        alt="github"
+                        className={css.logo}
+                      />
+                    </a>
                   </div>
                   <div className={css.technologiesWrapper}>
                     <span>{intl.messages.cards.technologies_used}</span>
@@ -102,11 +102,11 @@ const Projects = ({ test }) => {
               )}
               {demo && (
                 <div
+                  className={css.demoTV}
                   onClick={toggleDemo()}
                   style={{
                     "background-image": "url(" + projects[selected].gif + ")",
                     "background-size": "cover",
-                    cursor: "pointer",
                   }}
                 ></div>
               )}

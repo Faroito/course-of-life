@@ -191,7 +191,7 @@
       },
       {
         "name": "A-MAZing",
-        "title": "OpenGl project with physic simulation, boids and pathfinding.",
+        "title": "OpenGL project with physic simulation, boids and pathfinding.",
         "description": [
           "Hello World"
         ],

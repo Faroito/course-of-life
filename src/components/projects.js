@@ -80,7 +80,9 @@ const Projects = ({ test }) => {
                     })}
                   </div>
                   <div className={css.demo}>
-                    <span onClick={toggleDemo()}>See Demo</span>
+                    <span onClick={toggleDemo()}>
+                      {intl.messages.cards.see_demo}
+                    </span>
                     <a
                       className={css.icon}
                       href={projects[selected].link}
@@ -111,6 +113,12 @@ const Projects = ({ test }) => {
                 ></div>
               )}
             </div>
+            <img
+              src="icons/close.svg"
+              alt={intl.messages.cards.close}
+              className={css.close}
+              onClick={onOpen(false)}
+            />
           </div>
         )}
       </div>

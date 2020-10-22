@@ -103,10 +103,9 @@
   width: 25px;
   height: 25px;
   margin-left: auto;
-  transition-delay: var(--delay-open1);
-  transition-duration: var(--duration-open1);
+  transition: transform var(--duration-open1) linear var(--delay-open1);
   transform: rotate(90deg);
-  filter: brightness(20%);
+  filter: brightness(30%);
 
   cursor: pointer;
 }

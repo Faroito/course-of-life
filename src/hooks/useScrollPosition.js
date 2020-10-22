@@ -6,15 +6,13 @@ const useScrollPosition = (element) => {
     top: undefined,
   });
 
-  const hasElement = !!element;
-
   useEffect(() => {
-    const ref = hasElement ? element.current : window;
+    const ref = element ? element.current : window;
 
     function handleScroll() {
       setScrollPosition({
-        left: hasElement ? ref.scrollLeft : ref.scrollX,
-        top: hasElement ? ref.scrollTop : ref.scrollY,
+        left: element ? ref.scrollLeft : ref.scrollX,
+        top: element ? ref.scrollTop : ref.scrollY,
       });
     }
     ref.addEventListener("scroll", handleScroll);

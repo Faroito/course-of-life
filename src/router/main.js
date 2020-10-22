@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { useIntl } from "react-intl";
 
@@ -12,6 +12,7 @@ import NavBar from "../components/nav-bar";
 const Main = ({ language, setLanguage }) => {
   const intl = useIntl();
   const location = useLocation();
+  const projectPage = useRef();
 
   const button = {
     home: {
@@ -31,9 +32,14 @@ const Main = ({ language, setLanguage }) => {
         language={language}
         setLanguage={setLanguage}
         location={location.pathname}
+        projectPage={projectPage}
       />
       <Switch>
-        <Route exact path="/" component={Body} />
+        <Route
+          exact
+          path="/"
+          component={() => <Body projectPage={projectPage} />}
+        />
         <Route exact path="/contact-me" component={ContactMe} />
         <Route component={NoMatchPage} />
       </Switch>

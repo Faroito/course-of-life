@@ -8,7 +8,7 @@ import Projects from "../components/projects";
 import Intro from "../components/intro";
 import css from "./css/body.module.css";
 
-const Body = ({ body }) => {
+const Body = ({ projectPage }) => {
   const intl = useIntl();
   return (
     <div className={css.body}>
@@ -21,7 +21,7 @@ const Body = ({ body }) => {
           return <ExperienceCard {...experience} idx={index} key={index} />;
         })}
       </div>
-      <Projects />
+      <Projects projectPage={projectPage} />
       <h2 id="education" className={css.partTitle}>
         {intl.messages.body.education}
       </h2>

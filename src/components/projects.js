@@ -6,7 +6,7 @@ import IconsList from "./icons-list";
 import classnames from "classnames";
 import css from "./css/projects.module.css";
 
-const Projects = ({ test }) => {
+const Projects = ({ projectPage }) => {
   const intl = useIntl();
   const [open, setOpen] = useState(false);
   const [demo, setDemo] = useState(false);
@@ -33,7 +33,7 @@ const Projects = ({ test }) => {
   const projects = intl.messages.cards.projects;
 
   return (
-    <div className={css.projectsPage}>
+    <div className={css.projectsPage} ref={projectPage}>
       <div className={background}>
         <div className={button} onClick={onOpen(true)}>
           {intl.messages.body.projects_button}

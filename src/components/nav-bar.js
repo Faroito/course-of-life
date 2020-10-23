@@ -2,11 +2,12 @@ import React, { useState } from "react";
 
 import useScrollPosition from "../hooks/useScrollPosition";
 import useWindowSize from "../hooks/useWindowSize";
+import useElementTopWindow from "../hooks/useElementTopWindow";
 
 import classnames from "classnames";
 import css from "./css/nav-bar.module.css";
 
-const LangMenu = ({ language, setLanguage, topDark }) => {
+const LangMenu = ({ language, setLanguage, topDark, forceDark }) => {
   const windowSize = useWindowSize();
   const scrollPosition = useScrollPosition();
   const [over, setOver] = useState(false);
@@ -19,7 +20,8 @@ const LangMenu = ({ language, setLanguage, topDark }) => {
     setOver(status);
   };
 
-  const isDarkMode = scrollPosition.top > windowSize.height * topDark;
+  const onIntro = scrollPosition.top > windowSize.height * topDark;
+  const isDarkMode = onIntro && forceDark;
   const langMenuTop = over ? 0 : -42;
   const banner = classnames(css.banner, {
     [css.darkBanner]: isDarkMode,
@@ -56,22 +58,21 @@ const LangMenu = ({ language, setLanguage, topDark }) => {
   );
 };
 
-const NavBar = ({ language, setLanguage, location }) => {
+const NavBar = ({ language, setLanguage, location, projectPage }) => {
   const isHomePage = location === "/";
+  const elementTopWindow = useElementTopWindow(projectPage);
 
-  if (isHomePage)
-    return (
-      <LangMenu language={language} setLanguage={setLanguage} topDark={0.82} />
-    );
-  else {
-    return (
-      <header className={css.header}>
-        <h1 className={css.name}>Timothée Couble</h1>
-        <LangMenu language={language} setLanguage={setLanguage} topDark={0.1} />
-        ;
-      </header>
-    );
-  }
+  return (
+    <header className={css.header}>
+      {!isHomePage && <h1 className={css.name}>Timothée Couble</h1>}
+      <LangMenu
+        language={language}
+        setLanguage={setLanguage}
+        topDark={isHomePage ? 0.82 : 0.1}
+        forceDark={!elementTopWindow}
+      />
+    </header>
+  );
 };
 
 export default NavBar;

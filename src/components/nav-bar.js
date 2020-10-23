@@ -62,29 +62,17 @@ const NavBar = ({ language, setLanguage, location, projectPage }) => {
   const isHomePage = location === "/";
   const elementTopWindow = useElementTopWindow(projectPage);
 
-  if (isHomePage)
-    return (
+  return (
+    <header className={css.header}>
+      {!isHomePage && <h1 className={css.name}>Timothée Couble</h1>}
       <LangMenu
         language={language}
         setLanguage={setLanguage}
-        topDark={0.82}
+        topDark={isHomePage ? 0.82 : 0.1}
         forceDark={!elementTopWindow}
       />
-    );
-  else {
-    return (
-      <header className={css.header}>
-        <h1 className={css.name}>Timothée Couble</h1>
-        <LangMenu
-          language={language}
-          setLanguage={setLanguage}
-          topDark={0.1}
-          forceDark={false}
-        />
-        ;
-      </header>
-    );
-  }
+    </header>
+  );
 };
 
 export default NavBar;

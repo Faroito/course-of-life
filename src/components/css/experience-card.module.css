@@ -86,13 +86,13 @@
 }
 
 .companyName {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-weight: bold;
   margin-right: 10px;
 }
 
 .location {
-  font-size: 0.9rem;
+  font-size: 0.9em;
   color: white;
   background-color: var(--fg2-color);
   padding: 2px 5px;
@@ -125,7 +125,7 @@
 }
 
 .description {
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 
 .transition {
@@ -135,7 +135,7 @@
 
 .hide {
   transition-delay: var(--delay-close1);
-  font-size: 0rem;
+  font-size: 0em;
   opacity: 0;
   overflow: hidden;
 }

@@ -89,7 +89,7 @@
   justify-content: center;
   align-items: center;
 
-  font-size: 1.1rem;
+  font-size: 1.1em;
   font-weight: 600;
   color: var(--dark-text-color);
   border: 2px solid var(--bg-color);
@@ -139,7 +139,7 @@
 }
 
 .projectName {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -150,7 +150,7 @@
 }
 
 .description {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   text-align: justify;
 }
 

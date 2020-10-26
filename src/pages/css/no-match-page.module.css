@@ -6,11 +6,11 @@
 }
 
 .error {
-  font-size: 2rem;
+  font-size: 2em;
   font-weight: 600;
 }
 
 .message {
-  font-size: 1.8rem;
+  font-size: 1.8em;
   font-weight: 500;
 }

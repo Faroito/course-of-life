@@ -6,7 +6,8 @@
   position: absolute;
   top: -20px;
   bottom: -20px;
-  left: calc(-15vw + var(--timeline-distance));
+  left: 20vw;
+  /* transform: translate(-50%, 0); */
 
   width: 8px;
   background-color: var(--light-text-color);
@@ -15,7 +16,6 @@
 }
 
 .timelineUnfold {
-  left: var(--timeline-distance);
   transition-delay: var(--delay-open1);
   transition-duration: var(--duration-open1);
 }
@@ -31,7 +31,7 @@
 .dateInfo {
   position: absolute;
   top: 34px;
-  left: 68px;
+  left: 20px;
   font-weight: 500;
   white-space: nowrap;
   /* color: white; */
@@ -109,6 +109,22 @@
   opacity: 0;
   transition-delay: var(--delay-close2);
   transition-duration: var(--duration-close2);
+}
+
+@media (min-width: 992px) {
+  .timeline {
+    top: -20px;
+    bottom: -20px;
+    left: calc(-15vw + var(--timeline-distance));
+  }
+
+  .timelineUnfold {
+    left: var(--timeline-distance);
+  }
+
+  .dateInfo {
+    left: 68px;
+  }
 }
 
 @media (min-width: 1100px) {

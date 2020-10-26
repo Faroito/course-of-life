@@ -16,13 +16,10 @@
 .card {
   display: flex;
   align-items: center;
-  width: 65vw;
-  max-width: 715px;
-  padding: 15px;
-  padding-left: calc(15vw + 15px);
+  width: 90vw;
   margin: 40px 0px;
+  padding: 10px 5vw;
 
-  border-radius: 20px;
   background-color: white;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   transition-delay: var(--delay-open1);
@@ -32,11 +29,8 @@
 }
 
 .cardFold {
-  width: 50vw;
-  min-width: 360px;
-  max-width: 550px;
+  width: 90vw;
   margin: 20px 0px;
-  padding-left: 15px;
   transition-delay: var(--delay-close1);
   transition-duration: var(--duration-close1);
 }
@@ -64,6 +58,7 @@
 }
 
 .logo {
+  display: none;
   max-width: 80%;
   max-height: 60%;
 }
@@ -138,6 +133,28 @@
   font-size: 0em;
   opacity: 0;
   overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  .card {
+    width: 65vw;
+    max-width: 715px;
+    padding: 15px;
+    padding-left: calc(15vw + 15px);
+
+    border-radius: 20px;
+  }
+
+  .cardFold {
+    width: 50vw;
+    min-width: 360px;
+    max-width: 550px;
+    padding-left: 15px;
+  }
+
+  .logo {
+    display: initial;
+  }
 }
 
 @media (min-width: 1100px) {

@@ -43,6 +43,7 @@
 }
 
 .point {
+  display: none;
   position: absolute;
   height: 16px;
   width: 16px;
@@ -56,13 +57,13 @@
 }
 
 .dateBox {
+  display: none;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
   left: -65px;
   background-color: var(--fg-color);
 
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 40px;
@@ -124,6 +125,14 @@
 
   .dateInfo {
     left: 68px;
+  }
+
+  .point {
+    display: initial;
+  }
+
+  .dateBox {
+    display: flex;
   }
 }
 

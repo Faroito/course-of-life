@@ -16,10 +16,11 @@
 .card {
   display: flex;
   align-items: center;
-  width: 90vw;
-  margin: 40px 0px;
+  width: 86vw;
+  margin: 40px 2vw;
   padding: 10px 5vw;
 
+  border-radius: 20px;
   background-color: white;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.1);
   transition-delay: var(--delay-open1);
@@ -29,8 +30,8 @@
 }
 
 .cardFold {
-  width: 90vw;
-  margin: 20px 0px;
+  width: 86vw;
+  margin: 20px 2vw;
   transition-delay: var(--delay-close1);
   transition-duration: var(--duration-close1);
 }
@@ -141,8 +142,6 @@
     max-width: 715px;
     padding: 15px;
     padding-left: calc(15vw + 15px);
-
-    border-radius: 20px;
   }
 
   .cardFold {

@@ -11,28 +11,10 @@ import css from "./app.module.css";
 
 const messages = { fr, en };
 
-const matcher = window.matchMedia("(prefers-color-scheme: dark)");
-
-const lightSchemeIcon = document.querySelector("link#light-scheme-icon");
-const darkSchemeIcon = document.querySelector("link#dark-scheme-icon");
-
-const onUpdate = () => {
-  if (matcher.matches) {
-    lightSchemeIcon.remove();
-    document.head.append(darkSchemeIcon);
-  } else {
-    document.head.append(lightSchemeIcon);
-    darkSchemeIcon.remove();
-  }
-};
-
 const App = () => {
   // const [language, setLanguage] = useState(navigator.language.split(/[-_]/)[0]);
   const [language, setLanguage] = useState("en");
   const location = useLocation();
-
-  matcher.addListener(onUpdate);
-  onUpdate();
 
   const app = classnames(css.app, { [css.noNav]: location.pathname === "/" });
 

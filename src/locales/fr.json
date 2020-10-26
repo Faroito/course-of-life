@@ -27,6 +27,8 @@
     "next": "Suivant",
     "months": " mois",
     "years": " années",
+    "see_demo": "Démo",
+    "close": "Fermer",
     "experiences": [
       {
         "name": "SmartShoot",
@@ -170,6 +172,51 @@
           "OpenGl",
           "SPARQL",
           "Neo4j"
+        ]
+      }
+    ],
+    "projects": [
+      {
+          "name": "MarioScene",
+          "title": "OpenGL scene in CPP with Mario Bros. theme",
+          "description": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+            "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          ],
+          "link": "https://github.com/Faroito/MarioScene",
+          "gif": "/project-background/mario-scene.png",
+          "technologies": [
+            "C++",
+            "CMake",
+            "OpenGL"
+          ]
+      },
+      {
+        "name": "A-MAZing",
+        "title": "OpenGL project with physic simulation, boids and pathfinding.",
+        "description": [
+          "Hello World"
+        ],
+        "link": "https://github.com/Faroito/aMAZing",
+        "gif": "/project-background/amazing.gif",
+        "technologies": [
+          "C++",
+          "CMake",
+          "OpenGL"
+        ]
+      },
+      {
+        "name": "Paperfly",
+        "title": "Boids model simulated with Vulkan API.",
+        "description": [
+          "Hello World"
+        ],
+        "link": "https://github.com/Faroito/Paperfly",
+        "gif": "/project-background/paperfly.gif",
+        "technologies": [
+          "C++",
+          "CMake",
+          "Vulkan"
         ]
       }
     ]

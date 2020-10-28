@@ -206,17 +206,6 @@
   border: 2px solid var(--fg-color);
 }
 
-.technologiesWrapper {
-  display: flex;
-  align-items: center;
-}
-
-.technologiesWrapper > span {
-  margin-top: 10px;
-  margin-right: 10px;
-  white-space: nowrap;
-}
-
 .gif {
   object-fit: cover;
 }

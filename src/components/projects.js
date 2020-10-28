@@ -46,6 +46,9 @@ const Projects = ({ projectPage }) => {
 
   const projects = intl.messages.cards.projects;
   const isDesktop = windowMode === "Desktop";
+  const displayText =
+    (windowSize.width > 600 && windowSize.width < 900) ||
+    windowSize.width > 1100;
 
   return (
     <div className={css.projectsPage} ref={projectPage}>
@@ -122,7 +125,7 @@ const Projects = ({ projectPage }) => {
                     </a>
                   </div>
                   <div className={css.technologiesWrapper}>
-                    {isDesktop && (
+                    {displayText && (
                       <span>{intl.messages.cards.technologies_used}</span>
                     )}
                     <IconsList icons={projects[selected].technologies} />

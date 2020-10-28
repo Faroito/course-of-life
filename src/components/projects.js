@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { useIntl } from "react-intl";
 
 import IconsList from "./icons-list";
+import useWindowSize from "../hooks/useWindowSize";
 
 import classnames from "classnames";
 import css from "./css/projects.module.css";
@@ -11,6 +12,12 @@ const Projects = ({ projectPage }) => {
   const [open, setOpen] = useState(false);
   const [demo, setDemo] = useState(false);
   const [selected, setSelected] = useState(0);
+  const [windowMode, setWindowMode] = useState("Desktop");
+  const windowSize = useWindowSize();
+
+  useEffect(() => {
+    setWindowMode(windowSize.width > 900 ? "Desktop" : "Mobile");
+  }, [windowSize]);
 
   const onOpen = (status) => (e) => {
     setOpen(status);
@@ -18,6 +25,13 @@ const Projects = ({ projectPage }) => {
 
   const onSelected = (index) => (e) => {
     setSelected(index);
+    setDemo(false);
+  };
+
+  const setNext = (dir) => (e) => {
+    const next = selected + dir;
+    const len = projects.length;
+    setSelected(next < 0 ? len - 1 : next >= len ? 0 : next);
     setDemo(false);
   };
 
@@ -31,6 +45,7 @@ const Projects = ({ projectPage }) => {
   });
 
   const projects = intl.messages.cards.projects;
+  const isDesktop = windowMode === "Desktop";
 
   return (
     <div className={css.projectsPage} ref={projectPage}>
@@ -41,23 +56,33 @@ const Projects = ({ projectPage }) => {
         {open && <h2 className={css.title}>{intl.messages.body.projects}</h2>}
         {open && (
           <div className={css.projectScreen}>
-            <div className={css.menu}>
-              {projects.map((project, index) => {
-                const buttonMenu = classnames(css.buttonMenu, {
-                  [css.buttonMenuSelected]: index === selected,
-                });
-                return (
-                  <div
-                    className={buttonMenu}
-                    onClick={onSelected(index)}
-                    key={index}
-                  >
-                    <span>{project.name}</span>
-                  </div>
-                );
-              })}
-            </div>
-            <div className={css.line} />
+            {isDesktop && (
+              <div className={css.menu}>
+                {projects.map((project, index) => {
+                  const buttonMenu = classnames(css.buttonMenu, {
+                    [css.buttonMenuSelected]: index === selected,
+                  });
+                  return (
+                    <div
+                      className={buttonMenu}
+                      onClick={onSelected(index)}
+                      key={index}
+                    >
+                      <span>{project.name}</span>
+                    </div>
+                  );
+                })}
+              </div>
+            )}
+            {isDesktop && <div className={css.line} />}
+            {!isDesktop && (
+              <img
+                src="icons/fold-arrow.svg"
+                alt={intl.messages.cards.next}
+                className={css.next}
+                onClick={setNext(-1)}
+              />
+            )}
             <div className={css.presentation}>
               {!demo && (
                 <div>
@@ -97,7 +122,9 @@ const Projects = ({ projectPage }) => {
                     </a>
                   </div>
                   <div className={css.technologiesWrapper}>
-                    <span>{intl.messages.cards.technologies_used}</span>
+                    {isDesktop && (
+                      <span>{intl.messages.cards.technologies_used}</span>
+                    )}
                     <IconsList icons={projects[selected].technologies} />
                   </div>
                 </div>
@@ -113,6 +140,15 @@ const Projects = ({ projectPage }) => {
                 ></div>
               )}
             </div>
+            {!isDesktop && (
+              <img
+                src="icons/fold-arrow.svg"
+                alt={intl.messages.cards.next}
+                className={css.next}
+                style={{ transform: "rotate(180deg)" }}
+                onClick={setNext(1)}
+              />
+            )}
             <img
               src="icons/close.svg"
               alt={intl.messages.cards.close}

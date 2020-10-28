@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 100%;
+  width: 100vw;
   height: var(--header-height);
   background-color: var(--fg-color);
   user-select: none;
@@ -21,17 +21,17 @@
   position: fixed;
   z-index: 3;
   top: 0px;
-  left: 88vw;
+  right: 2vw;
 
   transition: top 0.3s ease;
   user-select: none;
 }
 
 .langSelector {
-  width: 100px;
-  height: 40px;
-  border-bottom-left-radius: 3px;
-  border-bottom-right-radius: 3px;
+  width: 80px;
+  height: 35px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
   background-color: var(--light-text-color);
 
   display: flex;
@@ -42,8 +42,8 @@
 }
 
 .langLogo {
-  width: 26px;
-  height: 20px;
+  width: 22px;
+  height: 18px;
 
   cursor: pointer;
   opacity: 0.9;
@@ -59,19 +59,19 @@
 
 .banner > div {
   position: absolute;
-  top: 50px;
-  left: 26px;
+  top: 45px;
+  left: 21px;
 
-  font-size: 0.8rem;
+  font-size: 0.8em;
   font-weight: 600;
 }
 
 .banner > img {
   position: absolute;
-  top: 40px;
-  left: 20px;
+  top: 36px;
+  left: 16px;
 
-  width: 30px;
+  width: 28px;
   height: auto;
   transition: filter 0.2s ease;
 }
@@ -82,4 +82,41 @@
 
 .darkBanner > img {
   filter: brightness(20%);
+}
+
+@media (max-width: 360px) {
+  .banner > div {
+    left: 22px;
+  }
+}
+
+@media (min-width: 900px) {
+  .langMenu {
+    font-size: 16px;
+    /* left: 88vw; */
+  }
+
+  .langSelector {
+    width: 100px;
+    height: 40px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .langLogo {
+    width: 26px;
+    height: 20px;
+  }
+
+  .banner > div {
+    top: 50px;
+    left: 26px;
+  }
+
+  .banner > img {
+    top: 40px;
+    left: 20px;
+
+    width: 30px;
+  }
 }

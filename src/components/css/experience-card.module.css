@@ -16,11 +16,9 @@
 .card {
   display: flex;
   align-items: center;
-  width: 65vw;
-  max-width: 715px;
-  padding: 15px;
-  padding-left: calc(15vw + 15px);
-  margin: 40px 0px;
+  width: 86vw;
+  margin: 40px 2vw;
+  padding: 10px 5vw;
 
   border-radius: 20px;
   background-color: white;
@@ -32,11 +30,8 @@
 }
 
 .cardFold {
-  width: 50vw;
-  min-width: 360px;
-  max-width: 550px;
-  margin: 20px 0px;
-  padding-left: 15px;
+  width: 86vw;
+  margin: 20px 2vw;
   transition-delay: var(--delay-close1);
   transition-duration: var(--duration-close1);
 }
@@ -64,6 +59,7 @@
 }
 
 .logo {
+  display: none;
   max-width: 80%;
   max-height: 60%;
 }
@@ -86,13 +82,13 @@
 }
 
 .companyName {
-  font-size: 1.4rem;
+  font-size: 1.4em;
   font-weight: bold;
   margin-right: 10px;
 }
 
 .location {
-  font-size: 0.9rem;
+  font-size: 0.9em;
   color: white;
   background-color: var(--fg2-color);
   padding: 2px 5px;
@@ -125,7 +121,7 @@
 }
 
 .description {
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 
 .transition {
@@ -135,9 +131,29 @@
 
 .hide {
   transition-delay: var(--delay-close1);
-  font-size: 0rem;
+  font-size: 0em;
   opacity: 0;
   overflow: hidden;
+}
+
+@media (min-width: 900px) {
+  .card {
+    width: 65vw;
+    max-width: 715px;
+    padding: 15px;
+    padding-left: calc(15vw + 15px);
+  }
+
+  .cardFold {
+    width: 50vw;
+    min-width: 360px;
+    max-width: 550px;
+    padding-left: 15px;
+  }
+
+  .logo {
+    display: initial;
+  }
 }
 
 @media (min-width: 1100px) {

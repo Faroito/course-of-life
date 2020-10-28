@@ -6,7 +6,8 @@
   position: absolute;
   top: -20px;
   bottom: -20px;
-  left: calc(-15vw + var(--timeline-distance));
+  left: 20vw;
+  /* transform: translate(-50%, 0); */
 
   width: 8px;
   background-color: var(--light-text-color);
@@ -15,23 +16,30 @@
 }
 
 .timelineUnfold {
-  left: var(--timeline-distance);
   transition-delay: var(--delay-open1);
   transition-duration: var(--duration-open1);
 }
 
 .timelineStart {
-  background: linear-gradient(0deg, var(--light-text-color) 80%, transparent);
+  background: linear-gradient(
+    0deg,
+    var(--light-text-color) 80%,
+    var(--bg-color) 100%
+  );
 }
 
 .timelineEnd {
-  background: linear-gradient(180deg, var(--light-text-color) 80%, transparent);
+  background: linear-gradient(
+    180deg,
+    var(--light-text-color) 80%,
+    var(--bg-color) 100%
+  );
 }
 
 .dateInfo {
   position: absolute;
   top: 34px;
-  left: 68px;
+  left: 20px;
   font-weight: 500;
   white-space: nowrap;
   /* color: white; */
@@ -43,6 +51,7 @@
 }
 
 .point {
+  display: none;
   position: absolute;
   height: 16px;
   width: 16px;
@@ -56,13 +65,13 @@
 }
 
 .dateBox {
+  display: none;
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
   left: -65px;
   background-color: var(--fg-color);
 
-  display: flex;
   align-items: center;
   justify-content: flex-end;
   width: 40px;
@@ -82,7 +91,7 @@
 
 .dateYear {
   padding-right: 1px;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: 500;
   color: white;
   z-index: 1;
@@ -92,7 +101,7 @@
   position: absolute;
   top: 50%;
   left: -165px;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   font-weight: 500;
   white-space: nowrap;
   color: white;
@@ -109,6 +118,30 @@
   opacity: 0;
   transition-delay: var(--delay-close2);
   transition-duration: var(--duration-close2);
+}
+
+@media (min-width: 900px) {
+  .timeline {
+    top: -20px;
+    bottom: -20px;
+    left: calc(-15vw + var(--timeline-distance));
+  }
+
+  .timelineUnfold {
+    left: var(--timeline-distance);
+  }
+
+  .dateInfo {
+    left: 68px;
+  }
+
+  .point {
+    display: initial;
+  }
+
+  .dateBox {
+    display: flex;
+  }
 }
 
 @media (min-width: 1100px) {

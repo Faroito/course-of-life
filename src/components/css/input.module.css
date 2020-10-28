@@ -1,7 +1,7 @@
 .input {
   display: flex;
   flex-direction: column;
-  width: 40vw;
+  width: 70vw;
   justify-content: space-between;
   margin: 8px 0px;
 }
@@ -17,7 +17,7 @@
   padding: 2px 5px;
   border: 1px solid var(--light-text-color);
   font-family: "Montserrat", sans-serif;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 
 .textInput {
@@ -36,4 +36,10 @@
 
 .required {
   outline: var(--incorrect-color) auto 1px;
+}
+
+@media (min-width: 900px) {
+  .input {
+    width: 40vw;
+  }
 }

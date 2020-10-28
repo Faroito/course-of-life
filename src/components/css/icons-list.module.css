@@ -12,13 +12,14 @@
   justify-content: center;
   align-items: center;
   margin-right: 6px;
-  width: 30px;
-  height: 30px;
+  margin-bottom: 6px;
+  width: 25px;
+  height: 25px;
   position: relative;
 }
 
 .iconText {
-  font-size: 0.7rem;
+  font-size: 0.7em;
   white-space: nowrap;
   padding: 2px 5px;
   border-radius: 20px;
@@ -26,7 +27,7 @@
   background-color: var(--fg2-color);
 
   position: absolute;
-  top: 22px;
+  top: 20px;
   left: 50%;
   transform: translate(-50%, 0);
   visibility: hidden;
@@ -45,4 +46,24 @@
 
 .iconContainer:hover .icons {
   opacity: 0.5;
+}
+
+@media (max-width: 360px) {
+  .iconContainer {
+    margin: 3px 3px;
+  }
+}
+
+@media (min-width: 900px) {
+  .iconContainer {
+    width: 30px;
+    height: 30px;
+  }
+
+  .iconText {
+    padding: 2px 5px;
+    border-radius: 20px;
+
+    top: 22px;
+  }
 }

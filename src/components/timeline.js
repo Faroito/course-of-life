@@ -1,15 +1,20 @@
 import React from "react";
 import classnames from "classnames";
-import moment from "moment";
 import { useIntl } from "react-intl";
+
+import moment from "moment";
+import "moment/locale/fr";
+import "moment/locale/en-gb";
+
+import { formatDateDuration } from "../services/misc";
 
 import css from "./css/timeline.module.css";
 
-const Timeline = ({ fold, date_start, date_end, duration, idx }) => {
+const Timeline = ({ fold, date_start, date_end, duration, idx, locale }) => {
   const intl = useIntl();
 
-  const start = moment(date_start);
-  const end = moment(date_end);
+  const start = moment(date_start).locale(locale);
+  const end = moment(date_end).locale(locale);
 
   const monthNb = duration ? duration : end.diff(start, "month") + 1;
   const isMonth = monthNb < 24;
@@ -29,9 +34,7 @@ const Timeline = ({ fold, date_start, date_end, duration, idx }) => {
 
   return (
     <div className={timeline}>
-      <div className={dateInfo}>
-        {start.format("MMM. YYYY") + " - " + end.format("MMM. YYYY")}
-      </div>
+      <div className={dateInfo}>{formatDateDuration(start, end, locale)}</div>
       <div className={css.point} />
       <div className={css.dateBox}>
         <span className={css.dateYear}>{start.format("YYYY")}</span>

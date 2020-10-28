@@ -18,6 +18,7 @@ const ExperienceCard = ({
   description,
   technologies,
   idx,
+  locale,
 }) => {
   const [fold, setFold] = useState(true);
   const intl = useIntl();
@@ -80,6 +81,7 @@ const ExperienceCard = ({
         date_end={date_end}
         duration={duration}
         idx={idx}
+        locale={locale}
       />
     </div>
   );

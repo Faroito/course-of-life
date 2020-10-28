@@ -38,7 +38,7 @@ const Main = ({ language, setLanguage }) => {
         <Route
           exact
           path="/"
-          component={() => <Body projectPage={projectPage} />}
+          component={() => <Body projectPage={projectPage} locale={language} />}
         />
         <Route exact path="/contact-me" component={ContactMe} />
         <Route component={NoMatchPage} />

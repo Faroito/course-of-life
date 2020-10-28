@@ -8,7 +8,7 @@ import Projects from "../components/projects";
 import Intro from "../components/intro";
 import css from "./css/body.module.css";
 
-const Body = ({ projectPage }) => {
+const Body = ({ projectPage, locale }) => {
   const intl = useIntl();
   return (
     <div className={css.body}>
@@ -18,14 +18,21 @@ const Body = ({ projectPage }) => {
       </h2>
       <div className={css.experiences}>
         {intl.messages.cards.experiences.map((experience, index) => {
-          return <ExperienceCard {...experience} idx={index} key={index} />;
+          return (
+            <ExperienceCard
+              {...experience}
+              idx={index}
+              key={index}
+              locale={locale}
+            />
+          );
         })}
       </div>
       <Projects projectPage={projectPage} />
       <h2 id="education" className={css.partTitle}>
         {intl.messages.body.education}
       </h2>
-      <Education />
+      <Education locale={locale} />
     </div>
   );
 };

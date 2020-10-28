@@ -1,11 +1,14 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useIntl } from "react-intl";
 import classnames from "classnames";
+
 import moment from "moment";
+import "moment/locale/fr";
+import "moment/locale/en-gb";
 
 import useScrollPosition from "../hooks/useScrollPosition";
 import useWindowSize from "../hooks/useWindowSize";
-import { clearName } from "../services/misc";
+import { clearName, formatDateDuration } from "../services/misc";
 import IconsList from "./icons-list";
 
 import css from "./css/education.module.css";
@@ -20,7 +23,7 @@ const getCardPosition = (width) => {
   return [0, floor, floor * 2];
 };
 
-const EducationCard = ({ education }) => {
+const EducationCard = ({ locale }) => {
   const [selected, setSelected] = useState(0);
   const [onCard, setOnCard] = useState();
   const [windowMode, setWindowMode] = useState("Desktop");
@@ -90,8 +93,8 @@ const EducationCard = ({ education }) => {
       <div className={css.slider}>
         <div className={css.slides} ref={scrollRef}>
           {schools.map((school, index) => {
-            const start = moment(school.date_start);
-            const end = moment(school.date_end);
+            const start = moment(school.date_start).locale(locale);
+            const end = moment(school.date_end).locale(locale);
 
             const date = classnames(css.date, {
               [css.hide]: index !== onCard,
@@ -101,9 +104,7 @@ const EducationCard = ({ education }) => {
               <div className={css.wrapper} key={index}>
                 <div className={css.card}>
                   <div className={date}>
-                    {start.format("MMM. YYYY") +
-                      " - " +
-                      end.format("MMM. YYYY")}
+                    {formatDateDuration(start, end, locale)}
                   </div>
                   <div className={css.cardHeader}>
                     <div className={css.schoolName}>{school.name}</div>

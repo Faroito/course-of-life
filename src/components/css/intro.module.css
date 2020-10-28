@@ -121,20 +121,15 @@
   text-align: justify;
 }
 
-@media (min-height: 750px) {
+@media (min-width: 600px) and (max-height: 750px) {
   .background {
     height: 70vh;
     align-items: center;
   }
 
   .subhead {
-    top: calc(70vh - 100px);
-  }
-}
-
-@media (min-width: 600px) and (max-height: 750px) {
-  .subhead {
     top: 400px;
+    top: calc(70vh - 100px);
   }
 }
 

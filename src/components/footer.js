@@ -27,9 +27,14 @@ const Footer = ({ link, text }) => {
       <Link className={css.button} to={link}>
         <span>{text}</span>
       </Link>
-      <div className={css.icon}>
+      <Link
+        className={css.icon}
+        to="/files/timothee_couble.pdf"
+        target="_blank"
+        download
+      >
         <img src="icons/download.svg" alt="download" className={css.logo} />
-      </div>
+      </Link>
     </footer>
   );
 };

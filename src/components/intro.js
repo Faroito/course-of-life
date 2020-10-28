@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import moment from "moment";
 import { useIntl } from "react-intl";
 
@@ -47,13 +47,18 @@ const Intro = ({ intro }) => {
             >
               <img src="icons/github.svg" alt="github" className={css.logo} />
             </a>
-            <div className={css.icon}>
+            <Link
+              className={css.icon}
+              to="/files/timothee_couble.pdf"
+              target="_blank"
+              download
+            >
               <img
                 src="icons/download.svg"
                 alt="download"
                 className={css.logo}
               />
-            </div>
+            </Link>
           </div>
         </div>
         <img className={css.portrait} src="portrait.jpg" alt="" />

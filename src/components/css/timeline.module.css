@@ -21,11 +21,19 @@
 }
 
 .timelineStart {
-  background: linear-gradient(0deg, var(--light-text-color) 80%, transparent);
+  background: linear-gradient(
+    0deg,
+    var(--light-text-color) 80%,
+    var(--bg-color) 100%
+  );
 }
 
 .timelineEnd {
-  background: linear-gradient(180deg, var(--light-text-color) 80%, transparent);
+  background: linear-gradient(
+    180deg,
+    var(--light-text-color) 80%,
+    var(--bg-color) 100%
+  );
 }
 
 .dateInfo {
@@ -112,7 +120,7 @@
   transition-duration: var(--duration-close2);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 900px) {
   .timeline {
     top: -20px;
     bottom: -20px;

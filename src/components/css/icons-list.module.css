@@ -48,13 +48,13 @@
   opacity: 0.5;
 }
 
-@media (max-width: 340px) {
+@media (max-width: 360px) {
   .iconContainer {
     margin: 3px 3px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 900px) {
   .iconContainer {
     width: 30px;
     height: 30px;

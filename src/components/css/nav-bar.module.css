@@ -84,13 +84,13 @@
   filter: brightness(20%);
 }
 
-@media (max-width: 340px) {
+@media (max-width: 360px) {
   .banner > div {
     left: 22px;
   }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 900px) {
   .langMenu {
     font-size: 16px;
     /* left: 88vw; */

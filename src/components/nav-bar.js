@@ -13,6 +13,7 @@ const LangMenu = ({ language, setLanguage, topDark, forceDark }) => {
   const [over, setOver] = useState(false);
 
   const languageChanged = (lang) => (e) => {
+    setOver(false);
     setLanguage(lang);
   };
 

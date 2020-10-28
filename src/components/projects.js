@@ -16,7 +16,7 @@ const Projects = ({ projectPage }) => {
   const windowSize = useWindowSize();
 
   useEffect(() => {
-    setWindowMode(windowSize.width > 992 ? "Desktop" : "Mobile");
+    setWindowMode(windowSize.width > 900 ? "Desktop" : "Mobile");
   }, [windowSize]);
 
   const onOpen = (status) => (e) => {
@@ -31,7 +31,7 @@ const Projects = ({ projectPage }) => {
   const setNext = (dir) => (e) => {
     const next = selected + dir;
     const len = projects.length;
-    setSelected(next < 0 ? len : next >= len ? 0 : next);
+    setSelected(next < 0 ? len - 1 : next >= len ? 0 : next);
     setDemo(false);
   };
 

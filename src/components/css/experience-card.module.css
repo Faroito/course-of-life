@@ -136,7 +136,7 @@
   overflow: hidden;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 900px) {
   .card {
     width: 65vw;
     max-width: 715px;

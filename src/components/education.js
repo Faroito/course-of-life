@@ -4,28 +4,46 @@ import classnames from "classnames";
 import moment from "moment";
 
 import useScrollPosition from "../hooks/useScrollPosition";
+import useWindowSize from "../hooks/useWindowSize";
 import { clearName } from "../services/misc";
 import IconsList from "./icons-list";
 
 import css from "./css/education.module.css";
 
-const cardPosition = [10, 530, 1050];
-const cardWidth = 520;
+const getCardWidth = (windowSize) => {
+  const width = windowSize.width;
+  return width >= 1100 ? 650 : width >= 900 ? width * 0.6 : width * 0.95;
+};
+
+const getCardPosition = (width) => {
+  const floor = Math.floor(width);
+  return [0, floor, floor * 2];
+};
 
 const EducationCard = ({ education }) => {
   const [selected, setSelected] = useState(0);
   const [onCard, setOnCard] = useState();
+  const [windowMode, setWindowMode] = useState("Desktop");
+  const windowSize = useWindowSize();
   const scrollRef = useRef(null);
   const scrollPosition = useScrollPosition(scrollRef);
 
+  useEffect(() => {
+    setWindowMode(windowSize.width > 900 ? "Desktop" : "Mobile");
+  }, [windowSize]);
+
   const changeSelection = (idx) => (e) => {
+    const cardPosition = getCardPosition(getCardWidth(windowSize));
     scrollRef.current.scrollLeft = cardPosition[idx];
     setSelected(idx);
   };
 
   useEffect(() => {
     const leftPos = scrollPosition.left;
+    const cardWidth = getCardWidth(windowSize);
+    const cardPosition = getCardPosition(cardWidth);
     const isFixed = cardPosition.findIndex((i) => i === leftPos);
+
     if (isFixed === selected) setOnCard(selected);
     if (selected === onCard) {
       const selection = cardPosition.findIndex(
@@ -36,10 +54,11 @@ const EducationCard = ({ education }) => {
         setSelected(selection);
       }
     }
-  }, [scrollPosition, selected, onCard]);
+  }, [scrollPosition, selected, onCard, windowSize]);
 
   const intl = useIntl();
   const schools = intl.messages.cards.educations;
+  const isDesktop = windowMode === "Desktop";
 
   const prevArrow = classnames(css.arrow, css.prevArrow, {
     [css.disabled]: selected === 0,
@@ -112,18 +131,22 @@ const EducationCard = ({ education }) => {
             );
           })}
         </div>
-        <img
-          src="icons/fold-arrow.svg"
-          alt={intl.messages.cards.previous}
-          className={prevArrow}
-          onClick={changeSelection(selected - 1)}
-        />
-        <img
-          src="icons/fold-arrow.svg"
-          alt={intl.messages.cards.next}
-          className={nextArrow}
-          onClick={changeSelection(selected + 1)}
-        />
+        {isDesktop && (
+          <img
+            src="icons/fold-arrow.svg"
+            alt={intl.messages.cards.previous}
+            className={prevArrow}
+            onClick={changeSelection(selected - 1)}
+          />
+        )}
+        {isDesktop && (
+          <img
+            src="icons/fold-arrow.svg"
+            alt={intl.messages.cards.next}
+            className={nextArrow}
+            onClick={changeSelection(selected + 1)}
+          />
+        )}
       </div>
     </div>
   );

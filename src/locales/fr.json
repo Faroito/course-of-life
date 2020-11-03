@@ -171,7 +171,8 @@
           "C++",
           "OpenGl",
           "SPARQL",
-          "Neo4j"
+          "Neo4j",
+          "Maya"
         ]
       }
     ],
@@ -180,22 +181,24 @@
           "name": "MarioScene",
           "title": "OpenGL scene in CPP with Mario Bros. theme",
           "description": [
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-            "sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            "Premier projet en OpenGL afin de s'initier à la technologie. Le but était d'afficher différents modèles 3D avec des effets de lumières et des animations.",
+            "Pour ce projet je me suis inspiré des modèles de Mario Bros. (fait avec Maya Autodesk)"
           ],
           "link": "https://github.com/Faroito/MarioScene",
           "gif": "/project-background/marioscene.gif",
           "technologies": [
             "C++",
             "CMake",
-            "OpenGL"
+            "OpenGL",
+            "Maya"
           ]
       },
       {
         "name": "A-MAZing",
         "title": "OpenGL project with physic simulation, boids and pathfinding.",
         "description": [
-          "Hello World"
+          "Projet fait pour la classe de Computer Graphics à Heriot Watt ",
+          "Nous devions mettre en œuvre multiples composants: explosion de particules, rigid body physics, AI crowd and A* star."
         ],
         "link": "https://github.com/Faroito/aMAZing",
         "gif": "/project-background/amazing.gif",
@@ -209,14 +212,16 @@
         "name": "Paperfly",
         "title": "Boids model simulated with Vulkan API.",
         "description": [
-          "Hello World"
+          "Petit projet afin de décourvrir l'API Vulkan.",
+          "C'est une implementation des Boids (simulation d'une nuée d'oiseaux) représenté par des avions en papier."
         ],
         "link": "https://github.com/Faroito/Paperfly",
         "gif": "/project-background/paperfly.gif",
         "technologies": [
           "C++",
           "CMake",
-          "Vulkan"
+          "Vulkan",
+          "Maya"
         ]
       }
     ]

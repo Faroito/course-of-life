@@ -21,6 +21,7 @@ const Projects = ({ projectPage }) => {
 
   const onOpen = (status) => (e) => {
     setOpen(status);
+    setDemo(false);
   };
 
   const onSelected = (index) => (e) => {

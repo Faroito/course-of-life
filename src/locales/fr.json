@@ -33,12 +33,12 @@
       {
         "name": "SmartShoot",
         "location": "San Francisco",
-        "title": "Software Developer Junior",
+        "title": "Software Developer Junior in an English-speaking team",
         "date_start": "2017-07",
         "date_end": "2017-12",
         "description": [
-          "SmartShoot est le leader américain de la mise en relation entre des photographes professionnels et des grands clients tel que UberEats et Airbnb.",
-          "Dans une équipe qui applique la méthodologie Agile, déveleppement d'application web en Vue.js / Python avec le framework Pyramid. Déveleppement d'un environement de test unitaire et fonctionnel au service de la plateforme.",
+          "SmartShoot est le leader américain de la mise en relation entre des photographes professionnels et des clients comme UberEats ou Airbnb.",
+          "Dans une équipe appliquant la méthodologie Agile, j'ai contribué au développement d'applications web en Vue.js / Python avec le framework Pyramid. J'ai aussi participé au développement d'un environement de tests unitaires et fonctionnels au service de la plateforme Smartshoot.",
           "6 mois de stage de deuxième année en immersion dans une équipe anglophone."
         ],
         "technologies": [
@@ -63,9 +63,9 @@
         "date_end": "2021-02",
         "duration": 18,
         "description": [
-          "Assistant à temps partielle pour le suivis des étudiants de première, deuxième et troisième en parralle de mes études.",
+          "Assistant pour le suivi des étudiants juniors en parallèle de mes études.",
           "Supervision des étudiants, corrections de projets, coaching des équipes projets.",
-          "Ces missions au sein de l'école m'ont permis de suivre 3 formations qui me sont validé par une certification (Teaching & Coaching)."
+          "Ces missions au sein de l'école m'ont permis de suivre 3 formations validées par une certification (Teaching & Coaching)."
         ],
         "technologies": [
           "C",
@@ -80,13 +80,13 @@
       {
         "name": "ForCity",
         "location": "Lyon",
-        "title": "Développeur Python",
+        "title": "Développeur Python dans une équipe \"Agile\" ",
         "date_start": "2019-04",
         "date_end": "2019-08",
         "description": [
-          "ForCity est une start-up française, qui fournit des outils de modélisation et simuation pour optimiser les ressources du territoire (chauffages, déchets, ...).",
-          "Développeur Python dans l'équipe de modélisation de la gestion des déchets de la métropole de Lyon.",
-          "Intervation dans les outils de modélisation et de la gestion cartographique dans une équipe \"Agile\" de 6 personnes."
+          "ForCity est une start-up française, qui fournit des outils de modélisation et simuation pour optimiser les ressources des villes :  Chauffage, Gestion des déchets, ...",
+          "J'ai participé aux travaux de l'équipe de modélisation de la gestion des déchets de la métropole de Lyon, en temps que développeur Python.",
+          "J'ai travaillé en particulier sur les outils de modélisation et de la gestion cartographique."
         ],
         "technologies": [
           "Python3",
@@ -101,13 +101,13 @@
       {
         "name": "Valraiso",
         "location": "Lyon",
-        "title": "Ingénieur en développement",
+        "title": "Assistant de recherche en IA & Développeur React",
         "date_start": "2020-04",
         "date_end": "2020-09",
         "description": [
-          "Valraiso est une société d'ingénérie e-commerce dans le domaine du tourisme de montagne",
-          "Dans le département de R&D, mise en oeuvre de techniques de clustering et de machine learning pour une applications marqueting d'assitence au choix d'un séjour de ski.",
-          "Déveleppement d'une application React / Node.js."
+          "Valraiso est une société d'ingénérie e-commerce, spécialisée dans le domaine du tourisme de montagne",
+          "Au sein du département de R&D, j'ai mis en oeuvre des techniques de clustering et de Machine Learning pour une applications marketing ",
+          "J'ai ensuite développé cette application d'assistance au choix d'un séjour de ski en React / Node.js."
         ],
         "technologies": [
           "Python3",
@@ -130,9 +130,9 @@
         "date_start": "2016-09",
         "date_end": "2021-08",
         "description": [
-          "Epitech est une formation en 5 ans pour une expertise informatique et en innovation.",
-          "L'Epitech est caractérisé par une pédagogie active, inductive et par projets.",
-          "Le travail en groupe permanent permet de dévelloper des valeurs de solidarité, de communication et d'autonomie."
+          "Epitech est une école supérieure formant des experts en informatique et en innovation. Le programme dure 5 ans.",
+          "L'école est caractérisée par une pédagogie active, inductive et par projets.",
+          "Le travail systématique en groupe sur les projets permet de développer des valeurs de solidarité, de communication et d'autonomie."
         ],
         "technologies": [
           "C",
@@ -149,10 +149,12 @@
       {
         "name": "Ionis STM",
         "location": "Paris",
-        "title": "Teaching & Coaching Diploma",
+        "title": "Certification en Teaching & Coaching",
         "date_start": "2017-07",
         "date_end": "2021-02",
-        "description": ["Educational / pedagogical technology"],
+        "description": [
+          "J'ai suivi 3 semaines intensives de formation sur la pédagogie et la psychologie, réparties sur 4 ans, avec mise en application par 3 stages de 6 mois à Epitech."
+        ],
         "technologies": []
       },
       {
@@ -162,8 +164,8 @@
         "date_start": "2019-09",
         "date_end": "2020-08",
         "description": [
-          "Formation accadémique en anglais dans les domaines d'IA, Big Data, Graphics Computation.",
-          "Rédaction d'une thèse de master d'une durée de 5 mois sur le sujet de \"Emails Classification using Natural Language Processing and Classification Techniques\"."
+          "Dans le cadre de ce Master 2, j'ai suivi une formation accadémique en anglais dans les domaines d'IA, Big Data, Graphics Computation.",
+          "Le sujet de ma thèse de Master (travaux de recherche pendant 5 mois) est \"Emails Classification using Natural Language Processing and Classification Techniques\"."
         ],
         "technologies": [
           "Python3",
@@ -181,7 +183,7 @@
           "name": "MarioScene",
           "title": "OpenGL scene in CPP with Mario Bros. theme",
           "description": [
-            "Premier projet en OpenGL afin de s'initier à la technologie. Le but était d'afficher différents modèles 3D avec des effets de lumières et des animations.",
+            "Mon premier projet en OpenGL avec pour objectif de s'initier à cette technologie. L'objectif était d'afficher différents modèles 3D avec des effets de lumières et des animations.",
             "Pour ce projet je me suis inspiré des modèles de Mario Bros. (fait avec Maya Autodesk)"
           ],
           "link": "https://github.com/Faroito/MarioScene",
@@ -197,8 +199,8 @@
         "name": "A-MAZing",
         "title": "OpenGL project with physic simulation, boids and pathfinding.",
         "description": [
-          "Projet fait pour la classe de Computer Graphics à Heriot Watt ",
-          "Nous devions mettre en œuvre multiples composants: explosion de particules, rigid body physics, AI crowd and A* star."
+          "Projet dans le cadre de mon cours de Computer Graphics à Heriot Watt University (Ecosse)",
+          "Nous devions mettre en œuvre de multiples composants: explosion de particules, rigid body physics, AI crowd and A* star."
         ],
         "link": "https://github.com/Faroito/aMAZing",
         "gif": "/project-background/amazing.gif",
@@ -212,8 +214,8 @@
         "name": "Paperfly",
         "title": "Boids model simulated with Vulkan API.",
         "description": [
-          "Petit projet afin de décourvrir l'API Vulkan.",
-          "C'est une implementation des Boids (simulation d'une nuée d'oiseaux) représenté par des avions en papier."
+          "Par ce petit projet personnel, je souhaitais découvrir l'API Vulkan.",
+          "J'ai implémenté le modèle des Boids (simulation d'une nuée d'oiseaux). J'ai remplacé les oiseaux par des avions en papier."
         ],
         "link": "https://github.com/Faroito/Paperfly",
         "gif": "/project-background/paperfly.gif",

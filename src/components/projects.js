@@ -43,6 +43,9 @@ const Projects = ({ projectPage }) => {
   const background = classnames(css.background, {
     [css.extendedBackground]: open,
   });
+  const projectScreen = classnames(css.projectScreen, {
+    [css.projectScreenHide]: !open,
+  });
 
   const projects = intl.messages.cards.projects;
   const isDesktop = windowMode === "Desktop";
@@ -54,35 +57,35 @@ const Projects = ({ projectPage }) => {
           {intl.messages.body.projects_button}
         </div>
         {open && <h2 className={css.title}>{intl.messages.body.projects}</h2>}
-        {open && (
-          <div className={css.projectScreen}>
-            {isDesktop && (
-              <div className={css.menu}>
-                {projects.map((project, index) => {
-                  const buttonMenu = classnames(css.buttonMenu, {
-                    [css.buttonMenuSelected]: index === selected,
-                  });
-                  return (
-                    <div
-                      className={buttonMenu}
-                      onClick={onSelected(index)}
-                      key={index}
-                    >
-                      <span>{project.name}</span>
-                    </div>
-                  );
-                })}
-              </div>
-            )}
-            {isDesktop && <div className={css.line} />}
-            {!isDesktop && (
-              <img
-                src="icons/fold-arrow.svg"
-                alt={intl.messages.cards.next}
-                className={css.next}
-                onClick={setNext(-1)}
-              />
-            )}
+        <div className={projectScreen}>
+          {isDesktop && (
+            <div className={css.menu}>
+              {projects.map((project, index) => {
+                const buttonMenu = classnames(css.buttonMenu, {
+                  [css.buttonMenuSelected]: index === selected,
+                });
+                return (
+                  <div
+                    className={buttonMenu}
+                    onClick={onSelected(index)}
+                    key={index}
+                  >
+                    <span>{project.name}</span>
+                  </div>
+                );
+              })}
+            </div>
+          )}
+          {isDesktop && <div className={css.line} />}
+          {!isDesktop && (
+            <img
+              src="icons/fold-arrow.svg"
+              alt={intl.messages.cards.next}
+              className={css.next}
+              onClick={setNext(-1)}
+            />
+          )}
+          {open && (
             <div className={css.presentation}>
               {!demo && (
                 <div>
@@ -135,22 +138,23 @@ const Projects = ({ projectPage }) => {
                 ></div>
               )}
             </div>
-            {!isDesktop && (
-              <img
-                src="icons/fold-arrow.svg"
-                alt={intl.messages.cards.next}
-                className={css.next}
-                style={{ transform: "rotate(180deg)" }}
-                onClick={setNext(1)}
-              />
-            )}
+          )}
+          {!isDesktop && (
             <img
-              src="icons/close.svg"
-              alt={intl.messages.cards.close}
-              className={css.close}
-              onClick={onOpen(false)}
+              src="icons/fold-arrow.svg"
+              alt={intl.messages.cards.next}
+              className={css.next}
+              style={{ transform: "rotate(180deg)" }}
+              onClick={setNext(1)}
             />
-          </div>
+          )}
+          <img
+            src="icons/close.svg"
+            alt={intl.messages.cards.close}
+            className={css.close}
+            onClick={onOpen(false)}
+          />
+        </div>
         )}
       </div>
     </div>

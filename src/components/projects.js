@@ -132,8 +132,9 @@ const Projects = ({ projectPage }) => {
                   className={css.demoTV}
                   onClick={toggleDemo()}
                   style={{
-                    "background-image": "url(" + projects[selected].gif + ")",
-                    "background-size": "cover",
+                    backgroundImage: "url(" + projects[selected].gif + ")",
+                    backgroundSize: "cover",
+                    backgroundRepeat: "no-repeat",
                   }}
                 ></div>
               )}

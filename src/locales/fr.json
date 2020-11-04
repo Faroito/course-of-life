@@ -139,6 +139,7 @@
           "C++",
           "SFML",
           "CMake",
+          "Conan",
           "Python3",
           "Haskell",
           "Bash",

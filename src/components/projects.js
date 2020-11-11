@@ -157,7 +157,6 @@ const Projects = ({ projectPage }) => {
             onClick={onOpen(false)}
           />
         </div>
-        )}
       </div>
     </div>
   );

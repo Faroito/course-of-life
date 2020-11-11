@@ -3,8 +3,8 @@ footer {
   bottom: 0;
   width: 100%;
   height: var(--footer-height);
-  color: var(--light-text-color);
-  background-color: var(--fg2-color);
+  color: var(--dark-text-color);
+  background-color: var(--fg-color);
 
   display: grid;
   grid-template-columns: 1fr 50% 1fr;
@@ -24,14 +24,14 @@ footer {
   user-select: none;
 
   font-weight: 500;
-  color: var(--light-text-color);
-  background-color: var(--fg-color);
+  color: var(--dark-text-color);
+  background-color: var(--light-text-color);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
 }
 
 .button:hover {
   color: var(--fg-color);
-  background-color: var(--light-text-color);
+  background-color: white;
 }
 
 .icon {
@@ -44,24 +44,21 @@ footer {
   margin: 5px;
 
   border-radius: 45px;
-  background-color: var(--fg-color);
+  background-color: var(--light-text-color);
   box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.3);
   cursor: pointer;
 }
 
 .icon:hover {
-  background-color: var(--light-text-color);
+  background-color: white;
 }
 
 .logo {
   object-fit: cover;
   width: 15px;
 
+  filter: brightness(20%);
   transition: color 0.3s ease;
-}
-
-.icon:hover .logo {
-  filter: brightness(10%);
 }
 
 @media (min-width: 900px) {

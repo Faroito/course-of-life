@@ -24,9 +24,12 @@ const Footer = ({ link, text }) => {
           <img src="icons/github.svg" alt="github" className={css.logo} />
         </a>
       </div>
-      <Link className={css.button} to={link}>
+      {/* <Link className={css.button} to={link}>
         <span>{text}</span>
-      </Link>
+      </Link> */}
+      <div className={css.button}>
+        <span>{text}</span>
+      </div>
       <Link
         className={css.icon}
         to="/files/timothee_couble.pdf"

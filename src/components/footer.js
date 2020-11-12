@@ -32,7 +32,7 @@ const Footer = ({ link, text }) => {
       </div>
       <Link
         className={css.icon}
-        to="/files/timothee_couble.pdf"
+        to="/files/timothee_couble_en.pdf"
         target="_blank"
         download
       >

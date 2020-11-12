@@ -37,8 +37,8 @@
         "date_start": "2017-07",
         "date_end": "2017-12",
         "description": [
-          "SmartShoot is a californian company, leader in connecting professional photographers with major clients such as UberEats and Airbnb.",
-          "In an Agile team, I developed web applications in Vue.js / Python with the Pyramid framework. I worked also on developing an unitary and functional test environment for Smartshoot platform."
+          "SmartShoot is a Californian company, leader in connecting professional photographers with major clients such as UberEats and Airbnb.",
+          "In an Agile team, I developed web applications in Vue.js / Python with the Pyramid framework. I worked also on developing unitary and functional test environment for Smartshoot platform."
         ],
         "technologies": [
           "Python3",

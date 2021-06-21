@@ -1,13 +1,15 @@
 import React from "react";
 
-import { clearName } from "../services/misc";
+import { clearName, isPng } from "../services/misc";
 import css from "./css/icons-list.module.css";
 
 const IconsList = ({ icons }) => {
   return (
     <div className={css.iconsList}>
       {icons.map((tech, index) => {
-        const fileName = "icons/tech/" + clearName(tech) + ".svg";
+        const techname = clearName(tech);
+        const fileName =
+          "icons/tech/" + techname + (isPng(techname) ? ".png" : ".svg");
         return (
           <div className={css.iconContainer} key={index}>
             <img src={fileName} alt="" className={css.icons} />

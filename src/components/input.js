@@ -32,6 +32,15 @@ const Input = ({ form, setForm, title, text, isRequired, type = "input" }) => {
           onChange={handleChange}
         />
       )}
+      {/* {isLoading &&
+        feed.data.map((x) =>
+          x.images.map((feed) => (
+            <Image
+              source={{ uri: feed.link }}
+              style={{ width: 200, height: 200 }}
+            />
+          ))
+        )} */}
     </div>
   );
 };

@@ -12,6 +12,7 @@ const Intro = ({ intro }) => {
 
   const now = moment();
   const age = now.diff(birthDate, "year");
+  const subtitle = intl.messages.intro.subtitle;
 
   return (
     <div className={css.background}>
@@ -64,7 +65,7 @@ const Intro = ({ intro }) => {
         <img className={css.portrait} src="portrait.jpg" alt="" />
       </div>
       <div className={css.subhead}>
-        <div className={css.subtitle}>{intl.messages.intro.subtitle}</div>
+        {subtitle && <div className={css.subtitle}>{subtitle}</div>}
         <p className={css.description}>{intl.messages.intro.description}</p>
         {/* <div>{intl.messages.body.intro}</div> */}
       </div>

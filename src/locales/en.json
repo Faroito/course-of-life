@@ -3,8 +3,8 @@
     "title": "Software Developer",
     "years": "years old",
     "location": "Lyon, France",
-    "subtitle": "Looking for a 6 month internship",
-    "description": "Interested in computer graphics (visualisation), artificial intelligence and programming. I’m looking for an internship where I can contribute with my skills in C, C++, Python and Javascript (Vue.Js, React)."
+    "subtitle": "",
+    "description": "Interested in web development and computer graphics programming, I’m looking for a job where I can contribute with my skills in C++, Python or Javascript (React, Node.js)."
   },
 
   "body": {
@@ -117,6 +117,27 @@
           "MySQL",
           "Git",
           "Mac OS"
+        ]
+      },
+      {
+        "name": "Kitware",
+        "location": "Lyon",
+        "title": "R&D Engineer - VTK Development team",
+        "date_start": "2021-03",
+        "date_end": "2021-08",
+        "description": [
+          "Kitware provides open source software for visualization, computer vision  and technical software​.",
+          "In the scientific visualisation department, my mission was to improve the multithreading tools in the VTK open source library."
+        ],
+        "technologies": [
+          "C++",
+          "CMake",
+          "VTK",
+          "Paraview",
+          "TBB",
+          "OpenMP",
+          "Git",
+          "Linux"
         ]
       }
     ],

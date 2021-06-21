@@ -3,8 +3,8 @@
     "title": "Ingénieur en développement",
     "years": "ans",
     "location": "Lyon, France",
-    "subtitle": "Recherche d'un stage de 6 mois",
-    "description": "Je suis intéressé par le computer graphics (visualisation) et l'intelligence artificielle. Je recherche un stage où je peux apporter ma contribution grâce à mes compétences en C, C++, Python et Javascript (Vue.Js, React)."
+    "subtitle": "",
+    "description": "Je suis intéressé par le développement web et la programmation infographique, je recherche un emploi où je pourrai mettre à profit mes compétences en C++, Python ou Javascript (React, Node.js)."
   },
 
   "body": {
@@ -106,7 +106,7 @@
         "date_end": "2020-09",
         "description": [
           "Valraiso est une société d'ingénérie e-commerce, spécialisée dans le domaine du tourisme de montagne",
-          "Au sein du département de R&D, j'ai mis en oeuvre des techniques de clustering et de Machine Learning pour une applications marketing ",
+          "Au sein de l'équipe de R&D, j'ai mis en oeuvre des techniques de clustering et de Machine Learning pour une applications marketing ",
           "J'ai ensuite développé cette application d'assistance au choix d'un séjour de ski en React / Node.js."
         ],
         "technologies": [
@@ -118,6 +118,27 @@
           "MySQL",
           "Git",
           "Mac OS"
+        ]
+      },
+      {
+        "name": "Kitware",
+        "location": "Lyon",
+        "title": "Ingénieur R&D - Équipe de développement VTK",
+        "date_start": "2021-03",
+        "date_end": "2021-08",
+        "description": [
+          "Kitware fournit des logiciels open source pour la visualisation, la computer vision et d'autres logiciels.",
+          "Au sein de l'équipe de visualisation scientifique, ma mission consistait à améliorer les outils de multithreading de la bibliothèque open source VTK."
+        ],
+        "technologies": [
+          "C++",
+          "CMake",
+          "VTK",
+          "Paraview",
+          "TBB",
+          "OpenMP",
+          "Git",
+          "Linux"
         ]
       }
     ],

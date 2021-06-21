@@ -116,9 +116,11 @@
 .description {
   font-weight: 400;
   /* letter-spacing: 1.2px; */
-  line-height: 1.5;
+  /* line-height: 1.5; */
   margin: 0;
   text-align: justify;
+  font-size: 1.2em;
+  line-height: 1.6;
 }
 
 @media (min-width: 600px) and (max-height: 750px) {

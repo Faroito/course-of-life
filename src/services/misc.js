@@ -23,3 +23,8 @@ const formatDate = (date, locale) => {
 export const formatDateDuration = (start, end, locale) => {
   return formatDate(start, locale) + " - " + formatDate(end, locale);
 };
+
+export const isPng = (name) => {
+  if (name === "tbb") return true;
+  return false;
+};
